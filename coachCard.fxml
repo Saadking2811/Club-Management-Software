@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="cardPane2" onMousePressed="#click" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="154.0" prefWidth="284.0" styleClass="anchor-pane-with-border-radius1" stylesheets="@Styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.club.Controller.CarteCoachController">
+    <children>
+        <ImageView fx:id="picCoach" fitHeight="70.0" fitWidth="70.0" layoutX="142.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@pics/userImage.png" />
+            </image>
+        </ImageView>
+        <Label fx:id="nameCoach" layoutX="21.0" layoutY="103.0" prefHeight="20.0" prefWidth="131.0" text="Nom">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="nameidCoach" layoutX="185.0" layoutY="103.0" prefHeight="20.0" prefWidth="85.0" text="    coachid">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="typeCoach" layoutX="52.0" layoutY="37.0" prefHeight="26.0" prefWidth="68.0" text="Coach" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="22.0" />
+            </font>
+        </Label>
+    </children>
+    <styleClass>
+        <String fx:value="card" />
+        <String fx:value="shadow" />
+        <String fx:value="anchor-pane-with-border-radius1" />
+    </styleClass>
+</AnchorPane>

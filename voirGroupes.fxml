@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="765.0" prefWidth="1024.0" stylesheets="@Styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.club.Controller.VoirGroupesController">
+    <children>
+      <Rectangle arcHeight="50.0" arcWidth="50.0" fill="WHITE" height="60.0" layoutX="562.0" layoutY="23.0" stroke="WHITE" strokeType="INSIDE" styleClass="shadow" width="281.0" />
+        <HBox layoutX="30.0" layoutY="142.0" prefHeight="58.0" prefWidth="326.0" stylesheets="@Styles.css">
+            <styleClass>
+                <String fx:value="search-box" />
+                <String fx:value="shadow" />
+            </styleClass></HBox>
+        <Button fx:id="searchButtonGroupe" onAction="#rechercherCartes" layoutX="241.0" layoutY="156.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" styleClass="search-button" stylesheets="@Styles.css" text="rechercher" textFill="WHITE" />
+        <TextField fx:id="searchIdGroupe" layoutX="31.0" layoutY="151.0" prefHeight="40.0" prefWidth="210.0" promptText="Tapez ici pour rechercher" styleClass="transparent" stylesheets="@Styles.css">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </TextField>
+        <Text fill="#00638d" layoutX="127.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Groupes">
+            <font>
+                <Font name="System Bold Italic" size="45.0" />
+            </font>
+        </Text>
+        <StackPane layoutX="46.0" layoutY="36.0" onMouseClicked="#switchToScene7b">
+            <!-- Marges pour étendre la zone de clic -->
+            <padding>
+                <Insets bottom="10" left="10" right="10" top="10" />
+            </padding>
+
+            <!-- ImageView -->
+            <ImageView>
+                <image>
+                    <Image url="@pics/left-arrow.png" />
+                </image>
+            </ImageView>
+        </StackPane>
+        <HBox layoutX="218.0" layoutY="270.0" prefHeight="362.0" prefWidth="758.0" styleClass="transparent" stylesheets="@Styles.css">
+            <children>
+                <ScrollPane fx:id="scroll" prefHeight="439.0" prefWidth="678.0" styleClass="transparent1" stylesheets="@Styles.css">
+                    <content>
+                        <GridPane fx:id="grid" prefHeight="0.0" prefWidth="0.0">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="0.0" />
+                            </columnConstraints>
+                        </GridPane>
+                    </content>
+                </ScrollPane>
+            </children>
+        </HBox>
+      <Button layoutX="874.0" layoutY="64.0" mnemonicParsing="false" onAction="#switchToDetailGroupe" styleClass="ajouter2_button" text="Détails" />
+      <Button layoutX="874.0" layoutY="112.0" mnemonicParsing="false" onAction="#switchToAjouterGroupe" styleClass="ajouter2_button" text="Ajouter" />
+      <Button onAction="#Supprimercard" layoutX="874.0" layoutY="160.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="133.0" styleClass="ajouter2_button" text="Supprimer" />
+      <Text  fill="#1f3f75" layoutX="578.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Veuillez séléctionner un des groupes avant d'accéder au détails ou bien de le supprimer" wrappingWidth="249.05889892578125" />
+      <Circle fill="#1f3f75" layoutX="845.0" layoutY="53.0" radius="26.0" stroke="#1f3f75" strokeType="INSIDE" />
+      <ImageView fitHeight="40.0" fitWidth="32.0" layoutX="829.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pics/chat.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

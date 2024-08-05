@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="736.0" prefWidth="1017.0" stylesheets="@Styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.club.Controller.ConnexionController">
+    <Rectangle arcHeight="25.0" arcWidth="25.0" fill="WHITE" height="78.0" layoutX="58.0" layoutY="5.0" stroke="WHITE" strokeType="INSIDE" styleClass="shadow" width="126.0" />
+
+    <!-- Fond du planning -->
+    <Rectangle arcHeight="25.0" arcWidth="25.0" fill="#1f3f75" height="627.0" layoutX="12.0" layoutY="91.0" width="988.0" />
+
+    <!-- Conteneur pour les contrôles de navigation -->
+    <HBox alignment="TOP_CENTER" layoutX="343.0" layoutY="40.0" spacing="20">
+        <!-- Boutons de navigation pour la semaine précédente et suivante -->
+        <Button styleClass="DM-button" text="Semaine Précédente" textFill="WHITE" />
+        <Button styleClass="DM-button" text="Semaine Suivante" textFill="WHITE" />
+        <!-- Sélecteur de date -->
+        <DatePicker prefHeight="26.0" prefWidth="163.0" promptText="jj/mm/aa" styleClass="DM-datePicker" />
+    </HBox>
+
+    <!-- Création d'un TabPane pour basculer entre les deux plannings -->
+    <TabPane layoutX="30.0" layoutY="115.0" prefHeight="578.0" prefWidth="954.0">
+        <!-- Premier onglet -->
+        <Tab text="Groupes">
+            <content>
+                <!-- Conteneur pour l'affichage de la semaine -->
+                <VBox layoutX="10" layoutY="109.0" prefHeight="570.0" prefWidth="1000.0">
+                    <ScrollPane prefHeight="633.0" prefWidth="1000.0">
+                        <content>
+                            <GridPane>
+                                <!-- Jours de la semaine -->
+                                <StackPane prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: #F4BF4F;" GridPane.columnIndex="1">
+                                    <Text fill="#1f3f75" text="Dimanche">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font></Text>
+                                </StackPane>
+                                <StackPane prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: #F4BF4F;" GridPane.columnIndex="2">
+                                    <Text fill="#1f3f75" text="Lundi">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font></Text>
+                                </StackPane>
+                                <StackPane prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: #F4BF4F;" GridPane.columnIndex="3">
+                                    <Text fill="#1f3f75" text="Mardi">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font></Text>
+                                </StackPane>
+                                <StackPane prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: #F4BF4F;" GridPane.columnIndex="4">
+                                    <Text fill="#1f3f75" text="Mercredi">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font></Text>
+                                </StackPane>
+                                <StackPane prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: #F4BF4F;" GridPane.columnIndex="5">
+                                    <Text fill="#1f3f75" text="Jeudi">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font></Text>
+                                </StackPane>
+                                <StackPane prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: #F4BF4F;" GridPane.columnIndex="6">
+                                    <Text fill="#1f3f75" text="Vendredi" >
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font></Text>
+                                </StackPane>
+                                <StackPane prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: #F4BF4F;" GridPane.columnIndex="7">
+                                    <Text fill="#1f3f75" text="Samedi" >
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font></Text>
+                                </StackPane>
+
+
+                                <!-- Les champs -->
+                                <StackPane prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="1">
+                                    <Text fill="WHITE" text="Groupe1">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font></Text>
+                                </StackPane>
+                                <StackPane prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="2">
+                                    <Text fill="WHITE" text="Groupe2">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font></Text>
+                                </StackPane>
+                                <StackPane prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="3">
+                                    <Text fill="WHITE" text="Groupe3">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font></Text>
+                                </StackPane>
+                                <columnConstraints>
+                                    <ColumnConstraints />
+                                    <ColumnConstraints />
+                                    <ColumnConstraints />
+                                    <ColumnConstraints />
+                                    <ColumnConstraints />
+                                    <ColumnConstraints />
+                                    <ColumnConstraints />
+                                    <ColumnConstraints />
+                                </columnConstraints>
+                                <rowConstraints>
+                                    <RowConstraints />
+                                    <RowConstraints />
+                                    <RowConstraints />
+                                    <RowConstraints />
+                                </rowConstraints>
+
+                            </GridPane>
+                        </content>
+                    </ScrollPane>
+                </VBox>
+            </content>
+        </Tab>
+
+        <!-- Deuxième onglet -->
+        <Tab text="Coaches">
+            <content>
+                <!-- Conteneur pour l'affichage de la semaine -->
+                <VBox layoutX="10" layoutY="109.0" prefHeight="570.0" prefWidth="1000.0">
+                    <ScrollPane prefHeight="633.0" prefWidth="1000.0">
+                        <content>
+                            <GridPane>
+                                <!-- Jours de la semaine -->
+                                <StackPane prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: #F4BF4F;" GridPane.columnIndex="1">
+                                    <Text fill="#1f3f75" text="Dimanche">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font></Text>
+                                </StackPane>
+                                <StackPane prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: #F4BF4F;" GridPane.columnIndex="2">
+                                    <Text fill="#1f3f75" text="Lundi">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font></Text>
+                                </StackPane>
+                                <StackPane prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: #F4BF4F;" GridPane.columnIndex="3">
+                                    <Text fill="#1f3f75" text="Mardi">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font></Text>
+                                </StackPane>
+                                <StackPane prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: #F4BF4F;" GridPane.columnIndex="4">
+                                    <Text fill="#1f3f75" text="Mercredi">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font></Text>
+                                </StackPane>
+                                <StackPane prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: #F4BF4F;" GridPane.columnIndex="5">
+                                    <Text fill="#1f3f75" text="Jeudi">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font></Text>
+                                </StackPane>
+                                <StackPane prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: #F4BF4F;" GridPane.columnIndex="6">
+                                    <Text fill="#1f3f75" text="Vendredi" >
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font></Text>
+                                </StackPane>
+                                <StackPane prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: #F4BF4F;" GridPane.columnIndex="7">
+                                    <Text fill="#1f3f75" text="Samedi" >
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font></Text>
+                                </StackPane>
+
+
+                                <!-- Les champs -->
+                                <StackPane prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="1">
+                                    <Text fill="WHITE" text="Coach1">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font></Text>
+                                </StackPane>
+                                <StackPane prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="2">
+                                    <Text fill="WHITE" text="Coach2">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font></Text>
+                                </StackPane>
+                                <StackPane prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="3">
+                                    <Text fill="WHITE" text="Coach3">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font></Text>
+                                </StackPane>
+                                <columnConstraints>
+                                    <ColumnConstraints />
+                                    <ColumnConstraints />
+                                    <ColumnConstraints />
+                                    <ColumnConstraints />
+                                    <ColumnConstraints />
+                                    <ColumnConstraints />
+                                    <ColumnConstraints />
+                                    <ColumnConstraints />
+                                </columnConstraints>
+                                <rowConstraints>
+                                    <RowConstraints />
+                                    <RowConstraints />
+                                    <RowConstraints />
+                                    <RowConstraints />
+                                </rowConstraints>
+
+                            </GridPane>
+                        </content>
+                    </ScrollPane>
+                </VBox>
+            </content>
+        </Tab>
+
+
+        <!-- Troisième onglet -->
+        <Tab text="Salles">
+            <content>
+                <!-- Conteneur pour l'affichage de la semaine -->
+                <VBox layoutX="10" layoutY="109.0" prefHeight="570.0" prefWidth="1000.0">
+                    <ScrollPane prefHeight="633.0" prefWidth="1000.0">
+                        <content>
+                            <GridPane>
+                                <!-- Jours de la semaine -->
+                                <StackPane prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: #F4BF4F;" GridPane.columnIndex="1">
+                                    <Text fill="#1f3f75" text="Dimanche">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font></Text>
+                                </StackPane>
+                                <StackPane prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: #F4BF4F;" GridPane.columnIndex="2">
+                                    <Text fill="#1f3f75" text="Lundi">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font></Text>
+                                </StackPane>
+                                <StackPane prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: #F4BF4F;" GridPane.columnIndex="3">
+                                    <Text fill="#1f3f75" text="Mardi">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font></Text>
+                                </StackPane>
+                                <StackPane prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: #F4BF4F;" GridPane.columnIndex="4">
+                                    <Text fill="#1f3f75" text="Mercredi">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font></Text>
+                                </StackPane>
+                                <StackPane prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: #F4BF4F;" GridPane.columnIndex="5">
+                                    <Text fill="#1f3f75" text="Jeudi">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font></Text>
+                                </StackPane>
+                                <StackPane prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: #F4BF4F;" GridPane.columnIndex="6">
+                                    <Text fill="#1f3f75" text="Vendredi" >
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font></Text>
+                                </StackPane>
+                                <StackPane prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: #F4BF4F;" GridPane.columnIndex="7">
+                                    <Text fill="#1f3f75" text="Samedi" >
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font></Text>
+                                </StackPane>
+
+
+                                <!-- Les champs -->
+                                <StackPane prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="1">
+                                    <Text fill="WHITE" text="Salle1">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font></Text>
+                                </StackPane>
+                                <StackPane prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="2">
+                                    <Text fill="WHITE" text="Salle2">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font></Text>
+                                </StackPane>
+                                <StackPane prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="3">
+                                    <Text fill="WHITE" text="Salle3">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font></Text>
+                                </StackPane>
+                                <columnConstraints>
+                                    <ColumnConstraints />
+                                    <ColumnConstraints />
+                                    <ColumnConstraints />
+                                    <ColumnConstraints />
+                                    <ColumnConstraints />
+                                    <ColumnConstraints />
+                                    <ColumnConstraints />
+                                    <ColumnConstraints />
+                                </columnConstraints>
+                                <rowConstraints>
+                                    <RowConstraints />
+                                    <RowConstraints />
+                                    <RowConstraints />
+                                    <RowConstraints />
+                                </rowConstraints>
+
+                            </GridPane>
+                        </content>
+                    </ScrollPane>
+                </VBox>
+            </content>
+        </Tab>
+
+
+
+
+        <!-- Troisième onglet -->
+        <Tab text="Sports">
+            <content>
+                <!-- Conteneur pour l'affichage de la semaine -->
+                <VBox layoutX="10" layoutY="109.0" prefHeight="570.0" prefWidth="1000.0">
+                    <ScrollPane prefHeight="633.0" prefWidth="1000.0">
+                        <content>
+                            <GridPane>
+                                <!-- Jours de la semaine -->
+                                <StackPane prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: #F4BF4F;" GridPane.columnIndex="1">
+                                    <Text fill="#1f3f75" text="Dimanche">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font></Text>
+                                </StackPane>
+                                <StackPane prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: #F4BF4F;" GridPane.columnIndex="2">
+                                    <Text fill="#1f3f75" text="Lundi">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font></Text>
+                                </StackPane>
+                                <StackPane prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: #F4BF4F;" GridPane.columnIndex="3">
+                                    <Text fill="#1f3f75" text="Mardi">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font></Text>
+                                </StackPane>
+                                <StackPane prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: #F4BF4F;" GridPane.columnIndex="4">
+                                    <Text fill="#1f3f75" text="Mercredi">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font></Text>
+                                </StackPane>
+                                <StackPane prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: #F4BF4F;" GridPane.columnIndex="5">
+                                    <Text fill="#1f3f75" text="Jeudi">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font></Text>
+                                </StackPane>
+                                <StackPane prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: #F4BF4F;" GridPane.columnIndex="6">
+                                    <Text fill="#1f3f75" text="Vendredi" >
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font></Text>
+                                </StackPane>
+                                <StackPane prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: #F4BF4F;" GridPane.columnIndex="7">
+                                    <Text fill="#1f3f75" text="Samedi" >
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font></Text>
+                                </StackPane>
+
+
+                                <!-- Les champs -->
+                                <StackPane prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="1">
+                                    <Text fill="WHITE" text="Sport1">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font></Text>
+                                </StackPane>
+                                <StackPane prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="2">
+                                    <Text fill="WHITE" text="Sport2">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font></Text>
+                                </StackPane>
+                                <StackPane prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="3">
+                                    <Text fill="WHITE" text="Sport3">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font></Text>
+                                </StackPane>
+                                <columnConstraints>
+                                    <ColumnConstraints />
+                                    <ColumnConstraints />
+                                    <ColumnConstraints />
+                                    <ColumnConstraints />
+                                    <ColumnConstraints />
+                                    <ColumnConstraints />
+                                    <ColumnConstraints />
+                                    <ColumnConstraints />
+                                </columnConstraints>
+                                <rowConstraints>
+                                    <RowConstraints />
+                                    <RowConstraints />
+                                    <RowConstraints />
+                                    <RowConstraints />
+                                </rowConstraints>
+
+                            </GridPane>
+                        </content>
+                    </ScrollPane>
+                </VBox>
+            </content>
+        </Tab>
+
+
+
+
+    </TabPane>
+
+
+    <Label layoutX="70.0" layoutY="54.0" style="-fx-font-weight: bold;" text="Semaine:" textFill="#1f3f75" />
+    <Label fx:id="mois" layoutX="104.0" layoutY="36.0" style="-fx-font-weight: bold;" text="Février" textFill="#1f3f75" />
+    <Label fx:id="semaine" layoutX="129.0" layoutY="54.0" prefHeight="18.0" prefWidth="10.0" style="-fx-font-weight: bold;" text="1" textFill="#1f3f75" />
+    <Label layoutX="72.0" layoutY="15.0" style="-fx-font-weight: bold;" text="Année: " textFill="#1f3f75" />
+    <Label fx:id="annee" layoutX="121.0" layoutY="15.0" style="-fx-font-weight: bold;" text="2024" textFill="#1f3f75" />
+    <Label layoutX="70.0" layoutY="35.0" style="-fx-font-weight: bold;" text="Mois: " textFill="#1f3f75" />
+
+    <StackPane layoutX="948.0" layoutY="11.0" prefWidth="28.0" onMouseClicked="#switchToScene7a">
+        <!-- Marges pour étendre la zone de clic -->
+        <padding>
+            <Insets bottom="10" left="10" right="10" top="10" />
+        </padding>
+
+        <!-- ImageView -->
+        <ImageView layoutX="922.0" layoutY="28.0">
+            <image>
+                <Image url="@pics/left-arrow.png" />
+            </image>
+        </ImageView>
+
+    </StackPane>
+    <Rectangle arcHeight="25.0" arcWidth="25.0" fill="#1f3f75" height="42.0" layoutX="158.0" layoutY="3.0" stroke="WHITE" strokeType="INSIDE" styleClass="shadow" width="52.0" />
+    <ImageView fitHeight="32.0" fitWidth="39.0" layoutX="168.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@pics/planning.png" />
+        </image>
+    </ImageView>
+
+</AnchorPane>

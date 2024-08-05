@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="760.0" prefWidth="1024.0" style="-fx-background-color: #1F3F75;" stylesheets="@Styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.club.Controller.ConnexionController">
+
+    <ImageView fitHeight="328.0" fitWidth="334.0" layoutX="723.0" layoutY="434.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@pics/11.png" />
+        </image>
+    </ImageView>
+
+    <StackPane layoutX="46.0" layoutY="36.0" onMouseClicked="#switchToVoirStaff">
+        <!-- Marges pour étendre la zone de clic -->
+        <padding>
+            <Insets bottom="10" left="10" right="10" top="10" />
+        </padding>
+
+        <!-- ImageView -->
+        <ImageView>
+            <image>
+                <Image url="@pics/left-arrow.png" />
+            </image>
+        </ImageView>
+    </StackPane>
+    <Rectangle arcHeight="25.0" arcWidth="25.0" fill="WHITE" height="546.0" layoutX="134.0" layoutY="97.0" stroke="WHITE" strokeType="INSIDE" styleClass="shadow" width="760.0" />
+
+    <Rectangle arcHeight="25.0" arcWidth="25.0" fill="#1f3f75" height="421.0" layoutX="134.0" layoutY="230.0" stroke="#1f3f75" strokeType="INSIDE" styleClass="shadow" width="760.0" />
+    <Text fill="#1f3f75" layoutX="374.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dossier Médical">
+        <font>
+            <Font name="System Bold Italic" size="38.0" />
+        </font>
+    </Text>
+
+    <!-- Button to allow users to add a file -->
+    <Button layoutX="240.0" layoutY="514.0" onAction="#handleOpenFileButtonAction" prefHeight="32.0" prefWidth="268.0" text="Certeficat d'habilité" textFill="#061f5f">
+        <font>
+            <Font name="System Bold" size="14.0" />
+        </font>
+        <styleClass>
+            <String fx:value="search-button1" />
+            <String fx:value="shadow" />
+        </styleClass></Button>
+    <ImageView fitHeight="172.0" fitWidth="193.0" layoutX="639.0" layoutY="326.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@pics/dossier-medical.png" />
+        </image>
+    </ImageView>
+   <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#f4bf4f" height="32.0" layoutX="240.0" layoutY="302.0" stroke="#f4bf4f" strokeType="INSIDE" styleClass="shadow" width="268.0" />
+   <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#f4bf4f" height="32.0" layoutX="240.0" layoutY="367.0" stroke="#f4bf4f" strokeType="INSIDE" styleClass="shadow" width="268.0" />
+   <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#f4bf4f" height="32.0" layoutX="240.0" layoutY="440.0" stroke="#f4bf4f" strokeType="INSIDE" styleClass="shadow" width="268.0" />
+   <Text fill="#061f5f" layoutX="255.0" layoutY="323.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Groupe sanguin:">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font>
+   </Text>
+   <Text fill="#061f5f" layoutX="255.0" layoutY="388.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Maladie chronique:">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font>
+   </Text>
+   <Text fill="#061f5f" layoutX="255.0" layoutY="461.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Blessure:">
+      <font>
+         <Font name="System Bold" size="14.0" />
+      </font>
+   </Text>
+   <Label fx:id="GS" layoutX="374.0" layoutY="309.0" prefHeight="18.0" prefWidth="58.0" text="Label" textFill="#061f5f" />
+   <Label fx:id="MC" layoutX="393.0" layoutY="374.0" prefHeight="18.0" prefWidth="108.0" text="Label" textFill="#061f5f" />
+   <Label fx:id="B" layoutX="328.0" layoutY="447.0" prefHeight="18.0" prefWidth="166.0" text="Label" textFill="#061f5f" />
+
+
+
+
+
+</AnchorPane>

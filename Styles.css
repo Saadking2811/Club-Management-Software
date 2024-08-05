@@ -1,0 +1,1106 @@
+.root {
+    -fx-background-color: linear-gradient(to bottom left, #C7DCEE, #F3F4D6, #E0F0DF, #BBD3F5);
+}
+
+
+
+.custom-button {
+    -fx-background-color: #f4f4ed;
+    -fx-background-radius: 20px;
+    -fx-border-color: #016e77 ;
+    -fx-border-radius: 20px;
+    -fx-border-width: 1px;
+    -fx-font-family: "Poppins";
+    -fx-font-size: 34px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1f3f75;
+    -fx-pref-width: 350px;
+    -fx-pref-height: 55px;
+    -fx-effect: dropshadow(gaussian, #a8a8a8, 10, 0.5, 0, 5);
+}
+.date{
+    -fx-fill: black;
+}
+
+
+.welcome-text {
+    -fx-font-family: "Poppins";
+    -fx-font-size: 28px;
+    -fx-fill: #636364;
+}
+
+.label1 {
+    -fx-font-family: "Poppins";
+    -fx-font-size: 22px;
+    -fx-fill: #181818;
+}
+
+.text-field1 {
+    -fx-font-family: "Poppins";
+    -fx-font-size: 18px;
+    -fx-prompt-text-fill: #1f3f75;
+    -fx-text-fill: #1f3f75 ;
+    -fx-background-color: transparent;
+    -fx-border-width: 0 0 2 0; /* Only bottom border */
+    -fx-border-color: #1f3f75; /* Default bottom border color */
+    -fx-pref-width: 350px;
+    -fx-pref-height: 60px;
+}
+
+/* Change bottom border color on focus */
+.text-field1:focused {
+    -fx-border-color: #6f7dfb; /* Change color on focus */
+}
+
+/* Hide default focus border */
+.text-field1:focused .text-field1 {
+    -fx-focus-color: transparent;
+}
+
+
+.Mlabel {
+    -fx-font-family: "Poppins";
+    -fx-font-size: 18px;
+    -fx-fill: #181818;
+}
+
+.connect_button {
+    -fx-background-color: linear-gradient(to right, #C7DCEE, #F3F4D6, #E0F0DF, #BBD3F5);
+    -fx-background-radius: 10px;
+    -fx-pref-width: 350px;
+    -fx-pref-height: 60px;
+    -fx-text-fill: #1f3f75;
+    -fx-border-color: #1f3f75;
+    -fx-font-size: 20px;
+    -fx-font-family: "Poppins";
+    -fx-cursor: hand;
+    -fx-transition: background-color 0.3s, text-fill 0.3s;
+    -fx-border-radius: 10px;
+}
+
+.connect_button:hover {
+    -fx-background-color: linear-gradient(to left, #C7DCEE, #F3F4D6, #E0F0DF, #BBD3F5);
+    -fx-border-color: #ffffff;
+    -fx-text-fill: #ffffff;
+    -fx-border-width: 1px;
+    -fx-border-radius: 10px;
+}
+
+
+
+.shape{
+    -fx-fill: #1f3f75;
+}
+
+.menu_text{
+    -fx-font-family: "Poppins";
+    -fx-font-size: 14px;
+}
+
+.menu_bold_text{
+    -fx-font-family: "Poppins";
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.menu_text:hover{
+    -fx-fill: #5d5fef;
+}
+
+.menu_bold_text_text:hover{
+    -fx-fill: #5d5fef;
+}
+
+
+.text-field_Rech {
+    -fx-prompt-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-font-family: 'Poppins';
+    -fx-background-color: #1f3f75;
+    -fx-background-radius: 50px;
+    -fx-pref-width: 680px;
+    -fx-pref-height: 30px;
+    -fx-border-width: 0.25px;
+    -fx-alignment: center;
+    -fx-text-inner-color: white;
+}
+
+.title_text{
+    -fx-font-family: "Poppins";
+    -fx-font-size: 40px;
+    -fx-font-weight: bold;
+    -fx-fill: white;
+}
+
+.title1_text{
+    -fx-font-family: "Poppins";
+    -fx-font-size: 36px;
+    -fx-font-weight: bold;
+    -fx-fill: #1f3f75;
+}
+
+.title1_text:hover{
+    -fx-fill: #5d5fef;
+}
+
+
+.title2_text{
+    -fx-font-family: "Poppins";
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-fill: #1f3f75;
+}
+
+.title2_text:hover{
+    -fx-fill: #5d5fef;
+}
+
+.title3_text{
+    -fx-font-family: "Poppins";
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-fill: #1f3f75;
+}
+
+.title3_text:hover{
+    -fx-fill: #5d5fef;
+}
+
+.subtitle1_text{
+    -fx-font-family: "Poppins";
+    -fx-font-size: 22px;
+    -fx-font-weight: bold;
+    -fx-fill: white;
+}
+
+.subtitle1_text:hover{
+    -fx-fill: #5d5fef;
+}
+
+.subtitle2_text{
+    -fx-font-family: "Poppins";
+    -fx-font-size: 25px;
+    -fx-font-weight: bold;
+    -fx-fill: white;
+}
+
+.subtitle2_text:hover{
+    -fx-fill: #5d5fef;
+}
+
+
+
+.forum1 {
+    -fx-font-family: "Poppins";
+    -fx-font-size: 18px;
+    -fx-prompt-text-fill: #ffffff;
+    -fx-background-color: #00638D;
+    -fx-border-color: #00638D;
+    -fx-border-width: 1px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-pref-width: 430px;
+    -fx-pref-height: 30px;
+    -fx-text-fill: #F4BF4F;
+}
+
+/* Change text color when TextField is focused */
+.forum1:focused {
+    -fx-text-fill: #F4BF4F; /* Change text color when focused */
+}
+
+
+
+.forum3 {
+    -fx-font-family: "Poppins";
+    -fx-font-size: 18px;
+    -fx-prompt-text-fill: #ffffff;
+    -fx-background-color: #00638D;
+    -fx-border-color: #00638D;
+    -fx-border-width: 1px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-pref-width: 350px;
+    -fx-pref-height: 30px;
+    -fx-text-fill: #F4BF4F;
+}
+
+/* Change text color when TextField is focused */
+.forum3:focused {
+    -fx-text-fill: #F4BF4F; /* Change text color when focused */
+}
+
+.ajouter_button {
+    -fx-background-color: #F4BF4F ;
+    -fx-background-radius: 10px;
+    -fx-pref-width: 150px;
+    -fx-pref-height: 40px;
+    -fx-text-fill: #1f3f75;
+    -fx-border-color: #1f3f75;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Poppins";
+    -fx-cursor: hand;
+    -fx-transition: background-color 0.3s, text-fill 0.3s;
+    -fx-border-radius: 10px;
+}
+
+.ajouter_button:hover {
+    -fx-background-color: #F4BF4F;
+    -fx-border-color: #ffffff;
+    -fx-text-fill: #ffffff;
+    -fx-border-width: 1px;
+    -fx-border-radius: 10px;
+}
+
+.search-box{
+    -fx-background-color:#FFFFFF;
+    -fx-background-radius: 100;
+}
+.transparent{
+    -fx-background-color: rgba(0,0,0,0);
+    -fx-prompt-text-fill: #1f3f75;
+}
+
+.search-button{
+    -fx-background-color: #00638D;
+    -fx-background-radius: 30;
+}
+
+.search-button:hover{
+    -fx-background-color: rgba(33, 116, 99, 0.599);
+    -fx-background-radius: 30;
+}
+
+.right-bar{
+    -fx-background-color: #F3F4D6;
+}
+
+.shadow{
+    -fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1), 10.0 , 0.0 , 0.0 ,10.0);
+}
+
+.search-button1{
+    -fx-background-color: #F4BF4F;
+    -fx-background-radius: 30;
+}
+
+.card{
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 30;
+}
+
+.date-picker1{
+    -fx-font-family: "Poppins";
+    -fx-font-size: 18px;
+    -fx-prompt-text-fill: #ffffff;
+    -fx-background-color: #00638D;
+    -fx-border-color: #00638D;
+    -fx-border-width: 1px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-pref-width: 350px;
+    -fx-pref-height: 30px;
+    -fx-text-fill: #F4BF4F;
+}
+
+.date-picker1 .text-input {
+    -fx-prompt-text-fill: white;
+}
+
+.date-picker1:focused .text-input {
+    -fx-prompt-text-fill: #F4BF4F;
+}
+
+.search-button2{
+    -fx-background-color: #ed695e;
+    -fx-background-radius: 30;
+}
+
+.transparent1 {
+    -fx-background-color: transparent;
+}
+
+.transparent1 .viewport {
+    -fx-background-color: transparent;
+}
+
+.transparent1 .scroll-bar:vertical, .transparent1 .scroll-bar:horizontal {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+}
+
+.transparent1 .corner {
+    -fx-background-color: transparent;
+}
+
+.anchor-pane-with-border-radius {
+    -fx-border-radius: 25px;
+    -fx-background-radius: 25px;
+    -fx-background-color: #1f3f75;
+}
+
+.anchor-pane-with-border-radius1 {
+    -fx-border-radius: 25px;
+    -fx-background-radius: 25px;
+    -fx-background-color: #F4BF4F;
+}
+
+.anchor-pane-with-border-radius2 {
+    -fx-border-radius: 25px;
+    -fx-background-radius: 25px;
+    -fx-background-color: #C4C4C4;
+}
+
+.DM-button{
+    -fx-background-color: #00638d;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-color: black;
+    -fx-border-width: 1;
+}
+
+.form-container {
+    -fx-background-color: #f9f9f9;
+    -fx-padding: 20px;
+    -fx-border-color: #ccc;
+    -fx-border-width: 1px;
+    -fx-border-radius: 5px;
+}
+
+.btn-submit {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 5px;
+    -fx-cursor: hand;
+}
+
+.btn-submit:hover {
+    -fx-background-color: #F4BF4F;
+}
+
+.forumMat {
+    -fx-pref-width: 200px;
+    -fx-pref-height: 40px;
+    -fx-font-size: 16px;
+    -fx-background-color: linear-gradient(to bottom, #4e7ba4, #2b5470);
+    -fx-text-fill: white;
+    -fx-border-color: #96a2f4;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+}
+
+.RectMat {
+    -fx-fill: linear-gradient(to bottom, #c9daf3,#1765b3);
+    -fx-stroke: #96a2f4;
+    -fx-stroke-type: inside;
+}
+
+.RectSalle {
+    -fx-fill: linear-gradient(to bottom, #c9daf3,#1765b3);
+    -fx-stroke: #96a2f4;
+    -fx-stroke-type: inside;
+}
+
+
+
+
+#AjouterButton {
+    -fx-pref-width: 150px;
+    -fx-pref-height: 50px;
+    -fx-font-size: 18px;
+    -fx-background-color: linear-gradient(to bottom, #6dc7e8, #4e7ba4);
+    -fx-text-fill: white;
+    -fx-border-color: #96a2f4;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.5), 10, 0, 0, 0);
+}
+
+#AjouterButton:hover {
+    -fx-background-color: linear-gradient(to bottom, #4e7ba4, #2b5470);
+}
+
+#AjouterButton:pressed {
+    -fx-background-color: linear-gradient(to bottom, #6dc7e8, #4e7ba4);
+}
+
+
+#switchToScene4b:hover {
+    -fx-cursor: hand;
+}
+
+.groupS {
+    -fx-prompt-text-fill: #061f5f;
+    -fx-text-fill: #fff;
+}
+
+.combo-box .text {
+    -fx-fill: #061f5f;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+.forum4 {
+    -fx-font-family: "Poppins";
+    -fx-font-size: 18px;
+    -fx-prompt-text-fill: #ffffff;
+    -fx-background-color: #00638D;
+    -fx-border-color: #00638D;
+    -fx-border-width: 1px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-pref-width: 350px;
+    -fx-pref-height: 30px;
+    -fx-text-fill: white;
+}
+
+.groupS1 {
+    -fx-prompt-text-fill: #fff;
+    -fx-text-fill: #fff;
+}
+
+.combo-box1 .text {
+    -fx-fill: #fff;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+.combo-box1 .list-cell {
+    -fx-background-color: #00638D;
+}
+
+.anchor-pane-with-color {
+    -fx-background-color: #1f3f75;
+}
+
+/* Style pour l'alerte */
+.my-alert {
+    -fx-background-color: linear-gradient(to bottom, #4F4F4F, #2E2E2E);
+}
+
+/* Style pour le panneau de l'en-tête */
+.my-alert .header-panel {
+    -fx-background-color: #ac9c42;
+    -fx-text-fill: #2E2E2E;
+}
+
+/* Style pour le texte de l'en-tête */
+.my-alert .header-panel .label {
+    -fx-text-fill: #ffffff;
+}
+
+/* Style pour le panneau du contenu */
+.my-alert .content.label {
+    -fx-text-fill: #FFD700;
+}
+
+
+.my-alert .button {
+    -fx-background-color: #FFD700;
+    -fx-text-fill: #2E2E2E;
+}
+
+.my-alert .button:hover {
+    -fx-background-color: #555033;
+    -fx-text-fill: #FFD700;
+}
+
+
+.anchor-pane-with-border-radius3 {
+    -fx-border-radius: 25px;
+    -fx-background-radius: 25px;
+    -fx-background-color: #1f3f75;
+    -fx-border-color: #F4BF4F;
+    -fx-border-width: 4;
+}
+
+.highlight {
+    -fx-border-color: yellow;
+    -fx-border-width: 2px;
+}
+.tete{
+-fx-height:20;-fx-width:114;
+}
+.tebe{
+    -fx-height:20;-fx-width:77;
+    }
+   
+    .ajouter2_button {
+        -fx-background-color: #F4BF4F ;
+        -fx-background-radius: 10px;
+        -fx-pref-width: 115px;
+        -fx-pref-height: 30px;
+        -fx-text-fill: #1f3f75;
+        -fx-border-color: #1f3f75;
+        -fx-font-size: 16px;
+        -fx-font-weight: bold;
+        -fx-font-family: "Poppins";
+        -fx-cursor: hand;
+        -fx-transition: background-color 0.3s, text-fill 0.3s;
+        -fx-border-radius: 10px;
+    }
+    
+    .ajouter2_button:hover {
+        -fx-background-color: #F4BF4F;
+        -fx-border-color: #ffffff;
+        -fx-text-fill: #ffffff;
+        -fx-border-width: 1px;
+        -fx-border-radius: 10px;
+    }
+    
+    .transparent2 {
+        -fx-background-color: #00638d;
+        -fx-background-radius: 5px;
+    }
+    
+    .transparent2 .viewport {
+        -fx-background-color: #00638d;
+    }
+    
+    .transparent2 .scroll-bar:vertical, .transparent2 .scroll-bar:horizontal {
+        -fx-background-color: #00638d;
+        -fx-background-insets: 0;
+    }
+    
+    .transparent2 .corner {
+        -fx-background-color: #00638d;
+    }
+
+
+    
+    .forum5 {
+        -fx-font-family: "Poppins";
+        -fx-font-size: 15px;
+        -fx-prompt-text-fill: #1f3f75;
+        -fx-background-color: #ffffff;
+        -fx-border-color: #1f3f75;
+        -fx-border-width: 2px;
+        -fx-border-radius: 10px;
+        -fx-background-radius: 10px;
+        -fx-pref-width: 280px;
+        -fx-pref-height: 30px;
+        -fx-text-fill: #1f3f75;
+    }
+    
+    .transparent3 {
+        -fx-background-color: #ffffff;
+        -fx-border-width: 2;
+        -fx-border-color: #1f3f75;
+    }
+    
+    .transparent3 .viewport {
+        -fx-background-color: #ffffff;
+        -fx-border-width: 2;
+        -fx-border-color: #1f3f75;
+    }
+    
+    .transparent3 .scroll-bar:vertical, .transparent3 .scroll-bar:horizontal {
+        -fx-background-color: #1f3f75;
+        -fx-background-insets: 0;
+    }
+    
+    .transparent3 .corner {
+        -fx-background-color: #ffffff;
+        -fx-border-width: 2;
+        -fx-border-color: #1f3f75;
+    }
+    
+    .ajouter3_button {
+        -fx-background-color: #1f3f75 ;
+        -fx-background-radius: 10px;
+        -fx-pref-width: 115px;
+        -fx-pref-height: 30px;
+        -fx-text-fill: #F4BF4F;
+        -fx-border-color: #F4BF4F;
+        -fx-font-size: 16px;
+        -fx-font-weight: bold;
+        -fx-font-family: "Poppins";
+        -fx-cursor: hand;
+        -fx-transition: background-color 0.3s, text-fill 0.3s;
+        -fx-border-radius: 10px;
+    }
+    
+    .ajouter3_button:hover {
+        -fx-background-color: #1f3f75;
+        -fx-border-color: #ffffff;
+        -fx-text-fill: #ffffff;
+        -fx-border-width: 1px;
+        -fx-border-radius: 10px;
+    }
+
+
+    .DM-datePicker .text-field {
+        -fx-background-color: #00638d;
+        -fx-border-color: black;
+        -fx-border-width: 1;
+        -fx-text-fill: white;
+        -fx-border-radius: 2;
+        -fx-background-radius: 2;
+        -fx-prompt-text-fill: white;
+    }
+    
+    .DM-datePicker .arrow-button {
+        -fx-background-color: #00638d;
+        -fx-border-color: black;
+        -fx-border-radius: 2;
+        -fx-background-radius: 2;
+    }
+    
+    .DM-datePicker .arrow {
+        -fx-background-color: white;
+    }
+    
+
+    
+    .tab-pane .tab {
+        -fx-background-color: #00638D; /* Couleur de fond de l'onglet */
+        -fx-padding: 5px 10px; /* Espacement à l'intérieur de l'onglet */
+    }
+    
+    .tab-pane .tab:selected {
+        -fx-background-color: white; /* Couleur de fond de l'onglet sélectionné */
+        -fx-border-color: #1f3f75;
+    }
+    
+    .tab-pane .tab .tab-label {
+        -fx-text-fill: white; /* Couleur du texte de l'onglet */
+        -fx-font-weight: bold; /* Gras pour le texte de l'onglet */
+    }
+    
+    .tab-pane .tab:selected .tab-label {
+        -fx-text-fill: #F4BF4F; /* Couleur du texte de l'onglet sélectionné */
+    }
+    
+    .tab-pane .tab .tab-close-button {
+        -fx-background-color: transparent; /* Fond transparent pour le bouton de fermeture */
+    }
+    
+    .tab-pane .tab:selected .tab-close-button {
+        -fx-background-color: transparent; /* Fond de bouton de fermeture pour l'onglet sélectionné */
+    }
+
+.tab-pane .headers-region {
+    -fx-background-color: #00638D; /* Couleur de fond pour l'arrière-plan des onglets */
+}
+
+.tab-pane:focused .tab-header-background {
+    -fx-background-color: transparent; /* Rendre l'arrière-plan transparent si nécessaire */
+}
+
+.tab-pane .tab-header-area .tab-header-background {
+    -fx-background-color: #1f3f75; /* Couleur de la ligne derrière les étiquettes d'onglets */
+}
+
+.anchor-pane-4 {
+    -fx-background-color: #00638D;
+
+}
+
+.white-text {
+    -fx-prompt-text-fill: #ffffff;
+}
+
+.white-text-combo-box  .prompt-text {
+    -fx-prompt-text-fill: #ffffff;
+}
+
+
+/*Modification 24/04/2024*/
+
+.anchor-pane-with-border-radius4 {
+    -fx-border-radius: 25px;
+    -fx-background-radius: 25px;
+}
+
+
+.anchor-pane-5 {
+    -fx-background-color: #023047;
+
+}
+
+.ajouter_button1 {
+    -fx-background-color: #6f7dfb ;
+    -fx-background-radius: 10px;
+    -fx-text-fill: #fff;
+    -fx-border-color: #fff;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-font-family: "Poppins";
+    -fx-cursor: hand;
+    -fx-transition: background-color 0.3s, text-fill 0.3s;
+    -fx-border-radius: 10px;
+}
+
+.buttonN {
+    -fx-background-color: #1f3f75;
+    -fx-background-radius: 10;
+    -fx-background-insets: 0, 1;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 5px 10px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 5, 0, 0, 0);
+    -fx-cursor: hand;
+}
+
+.buttonN:hover {
+    -fx-background-color:#6f7dfb
+}
+
+.buttonN:pressed {
+    -fx-background-color:#6f7dfb;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 2, 0, 0, 0);
+}
+
+.buttonHome {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border-width: 1;
+}
+
+.buttonHome:hover {
+    -fx-border-color: transparent transparent #6f7dfb transparent;
+}
+
+.btn_workbench {
+    -fx-border-color: #6f7dfb;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-style: solid;
+    -fx-transition: background-color 0.3s;
+    -fx-background-color: transparent;
+}
+
+.btn_workbench:hover {
+    -fx-background-color: #6780E2;
+    -fx-border-color: #748cf1;
+}
+
+.button55 {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent transparent #000000 transparent;
+    -fx-border-width: 1;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-transition: background-color 0.3s;
+}
+
+.button55:hover {
+    -fx-background-color: #6780E2;
+    -fx-border-color: #748cf1;
+}
+
+.btn_workbench2 {
+    -fx-background-radius: 20px;
+    -fx-transition: background-color 0.3s;
+    -fx-background-color: transparent;
+}
+
+.btn_workbench2:hover {
+    -fx-border-color: #6f7dfb;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 20px;
+    -fx-border-style: solid;
+    -fx-transition: background-color 0.3s;
+    -fx-background-color: transparent;
+}
+
+.facebook{
+    -fx-background-color: #1877F2;
+}
+
+.facebook:hover{
+    -fx-background-color: #0A66C2;
+}
+
+.insta{
+    -fx-background-color: #E64A8A;
+}
+
+.insta:hover{
+    -fx-background-color: #dd2a7b;
+}
+
+.gmail{
+    -fx-background-color: #FBBC05;
+}
+
+.gmail:hover{
+    -fx-background-color: #E3A800;
+}
+
+.darker_blue{
+    -fx-background-color:  #1f3f75;
+}
+
+.darker_blue:hover{
+    -fx-background-color:  #6f7dfb;
+}
+
+.darker_blue1{
+    -fx-background-color:  #fff;
+}
+
+.darker_blue1:hover{
+    -fx-background-color:  #6f7dfb;
+}
+
+
+.invisibleBox{
+    -fx-background-color: transparent;
+}
+
+
+
+
+.linechart{
+    -fx-background-color: #1f3f75;
+    -fx-background-radius: 25;
+    -fx-border-style: solid;
+    -fx-border-radius: 25;
+    -fx-border-width: 2;
+    -fx-border-color: #6f7dfb;
+    -fx-font-size: 20;
+    -fx-text-fill: white;
+    -fx-legend-visible: false;
+}
+
+.axis-label {
+    -fx-text-fill: #ffffff;
+}
+
+.chart-plot-background {
+    -fx-background-color:transparent;
+}
+
+.default-color0.chart-series-line { -fx-stroke: #238591; }
+.default-color1.chart-series-line { -fx-stroke: #e5d849; }
+.default-color2.chart-series-line { -fx-stroke: #ed4d51; }
+
+.whiteScroll {
+    -fx-background-color: white;
+    -fx-background-radius: 25;
+}
+
+.whiteScroll .viewport {
+    -fx-background-color: white;
+    -fx-background-radius: 25;
+}
+
+.whiteScroll .scroll-bar:vertical, .whiteScroll .scroll-bar:horizontal {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+}
+
+.whiteScroll .corner {
+    -fx-background-color: transparent;
+}
+
+.comBbox {
+    -fx-background-color: transparent;
+    -fx-border-color: #1f3f75;
+    -fx-border-radius: 25;
+    -fx-border-style: solid;
+}
+
+.comBbox .prompt-text {
+    -fx-text-fill: #1f3f75;
+    -fx-font-weight: bold;
+}
+
+.comBbox:hover .prompt-text {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+
+.comBbox:hover {
+    -fx-background-color: #1f3f75;
+    -fx-border-radius: 25;
+    -fx-background-radius: 25;
+    -fx-border-style: solid;
+    -fx-prompt-text-fill: white;
+    -fx-text-fill: white;
+}
+
+.certbtn {
+    -fx-background-color: transparent;
+    -fx-border-color: #1f3f75;
+    -fx-border-radius: 25;
+    -fx-border-style: solid;
+    -fx-prompt-text-fill: #1f3f75;
+    -fx-text-fill: #1f3f75;
+}
+
+.certbtn:hover {
+    -fx-background-color: #1f3f75;
+    -fx-border-radius: 25;
+    -fx-background-radius: 25;
+    -fx-border-style: solid;
+    -fx-prompt-text-fill: white;
+    -fx-text-fill: white;
+}
+
+.suivantbtn {
+    -fx-background-color: white;
+    -fx-border-radius: 25;
+}
+
+.suivantbtn:hover{
+    -fx-background-color: transparent;
+    -fx-prompt-text-fill: white;
+    -fx-border-color: white;
+    -fx-text-fill: white;
+}
+
+.ajbtn {
+    -fx-background-color: #1f3f75;
+    -fx-border-radius: 25;
+    -fx-background-radius: 25;
+    -fx-text-fill: white;
+}
+
+.ajbtn:hover{
+    -fx-background-color: transparent;
+    -fx-prompt-text-fill: #1f3f75;
+    -fx-border-color: #1f3f75;
+    -fx-text-fill: #1f3f75;
+}
+
+.date-picker5{
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-prompt-text-fill: #1f3f75;
+    -fx-background-color: transparent;
+    -fx-border-color: #1f3f75;
+    -fx-text-fill: #1f3f75;
+}
+
+.date-picker5 .text-input {
+    -fx-prompt-text-fill: #1f3f75;
+}
+
+.date-picker5:hover{
+    -fx-font-size: 14px;
+    -fx-prompt-text-fill: #1f3f75;
+    -fx-background-color: #1f3f75;
+    -fx-border-color: #1f3f75;
+    -fx-text-fill: white;
+}
+
+.bScroll  {
+    -fx-background-color: #1f3f75;
+}
+
+
+.send-button {
+    -fx-background-color: rgb(32, 89, 154); /* Bleu */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-padding: 10px 20px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.5), 5, 0, 0, 0);
+}
+
+.send-button:hover {
+    -fx-background-color: rgba(41, 137, 216, 1); /* Bleu plus clair au survol */
+    -fx-effect: dropshadow(gaussian, #4b0082, 10, 0, 0, 0);
+}
+
+.send-button:pressed {
+    -fx-background-color: rgba(25, 70, 128, 1); /* Bleu plus foncé en appuyant */
+    -fx-effect: innershadow(gaussian, rgba(0, 0, 0, 0.5), 5, 0, 0, 0);
+}
+/* Style pour les boutons */
+/* Style pour les boutons */
+.button10 {
+    -fx-background-color: linear-gradient(to bottom, #28567c, #3d6a96);
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-border-color: #4b0082;
+    -fx-border-width: 2px;
+    -fx-text-fill: white;
+    -fx-font-family: "System Bold";
+    -fx-font-size: 12pt;
+    -fx-effect: dropshadow(gaussian, #000, 10, 0, 0, 0);
+}
+
+/* Style pour les zones de texte */
+.forum6 {
+    -fx-background-color: rgba(30, 87, 153, 0.5);
+    -fx-border-color: linear-gradient(to bottom, #28567c, #3d6a96);
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-font-family: "System Bold";
+    -fx-font-size: 12pt;
+    -fx-text-fill: #ffffff;
+    -fx-prompt-text-fill: #1f3f75 ;
+}
+
+
+
+/* Style pour les étiquettes */
+.label-style {
+    -fx-font-family: "System Bold";
+    -fx-font-size: 14pt;
+    -fx-text-fill: #4b0082;
+}
+
+/* Style pour les DatePickers */
+.date-picker3 {
+    -fx-font-family: "System Bold";
+    -fx-font-size: 12pt;
+    -fx-prompt-text-fill: #ffffff;
+    -fx-text-fill: #ffffff;
+    -fx-border-color: linear-gradient(to bottom, #28567c, #3d6a96);
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-background-color: rgba(30, 87, 153, 0.5);
+    -fx-border-color: linear-gradient(to bottom, #28567c, #3d6a96);
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px;
+    -fx-font-family: "System Bold";
+    -fx-font-size: 12pt;
+    -fx-text-fill: #ffffff;
+}
+
+/* Style pour les ScrollPanes */
+.scroll-pane {
+    -fx-background-color: transparent;
+}
+
+/* Style pour les VBox */
+.v-box {
+    -fx-spacing: 10px;  
+}
+
+/* Animation de survol pour les boutons */
+.button10:hover {
+    -fx-background-color: linear-gradient(to bottom, #d0cf88, #5c98d9);
+    -fx-border-color: #3d6a96;
+    -fx-effect: dropshadow(gaussian, #4b0082, 10, 0, 0, 0);
+}
+
+/* Animation de survol pour les DatePickers */
+.date-picker3:hover {
+    -fx-border-color: #3d6a96;
+    -fx-effect: dropshadow(gaussian, rgba(41, 137, 216, 1), 10, 0, 0, 0);
+}
+
+.forum6:hover {
+    -fx-border-color: #85d4dc;
+    -fx-effect: dropshadow(gaussian, rgba(41, 137, 216, 1), 10, 0, 0, 0);
+}
+.anchor-pane-with-border-radius4 {
+    -fx-border-radius: 25px;
+    -fx-background-radius: 25px;
+    -fx-background-color: rgb(216, 172, 37, 1);
+}
+
+.tab-pane:focused .tab:selected .focus-indicator {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}

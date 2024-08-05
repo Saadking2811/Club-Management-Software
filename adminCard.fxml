@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="cardPane3" onMousePressed="#click" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="154.0" prefWidth="284.0" styleClass="anchor-pane-with-border-radius2" stylesheets="@Styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.club.Controller.CarteAdminController">
+    <children>
+        <ImageView fx:id="picAdmin" fitHeight="70.0" fitWidth="70.0" layoutX="142.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@pics/userImage.png" />
+            </image>
+        </ImageView>
+        <Label fx:id="nameAdmin" layoutX="21.0" layoutY="103.0" prefHeight="20.0" prefWidth="131.0" text="Nom d'utilisateur">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="nameidAdmin" layoutX="185.0" layoutY="103.0" prefHeight="20.0" prefWidth="85.0" text="    Mot de Passe">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="typeAdmin" layoutX="39.0" layoutY="34.0" prefHeight="32.0" prefWidth="94.0" text="Admin" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="22.0" />
+            </font>
+        </Label>
+    </children>
+    <styleClass>
+        <String fx:value="card" />
+        <String fx:value="shadow" />
+        <String fx:value="anchor-pane-with-border-radius2" />
+    </styleClass>
+</AnchorPane>

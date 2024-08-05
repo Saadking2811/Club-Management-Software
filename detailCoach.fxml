@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="760.0" prefWidth="1024.0" style="-fx-background-color: #1F3F75;" stylesheets="@Styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.club.Controller.ConnexionController">
+
+    <ImageView fitHeight="328.0" fitWidth="334.0" layoutX="723.0" layoutY="434.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@pics/11.png" />
+        </image>
+    </ImageView>
+
+    <StackPane layoutX="46.0" layoutY="36.0" onMouseClicked="#switchToVoirCoachs">
+        <!-- Marges pour étendre la zone de clic -->
+        <padding>
+            <Insets bottom="10" left="10" right="10" top="10" />
+        </padding>
+
+        <!-- ImageView -->
+        <ImageView>
+            <image>
+                <Image url="@pics/left-arrow.png" />
+            </image>
+        </ImageView>
+    </StackPane>
+    <Rectangle arcHeight="25.0" arcWidth="25.0" fill="WHITE" height="546.0" layoutX="134.0" layoutY="97.0" stroke="#1f3f75" strokeType="INSIDE" styleClass="shadow" width="760.0" />
+    <Rectangle arcHeight="20.0" arcWidth="20.0" fill="#1f3f75" height="357.0" layoutX="164.0" layoutY="241.0" stroke="#1f3f75" strokeType="INSIDE" styleClass="shadow" width="200.0" />
+    <ImageView fx:id="picAdherentD" fitHeight="100.0" fitWidth="100.0" layoutX="214.0" layoutY="263.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@pics/account.png" />
+        </image>
+    </ImageView>
+    <Text fx:id="nomAdherentD" fill="WHITE" layoutX="199.0" layoutY="402.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom">
+        <font>
+            <Font name="System Bold" size="18.0" />
+        </font>
+    </Text>
+    <Text fx:id="prenomAdherentD" fill="WHITE" layoutX="199.0" layoutY="439.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prénom">
+        <font>
+            <Font name="System Bold" size="18.0" />
+        </font>
+    </Text>
+    <Rectangle arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="40.0" layoutX="490.0" layoutY="149.0" stroke="#1f3f75" strokeType="INSIDE" width="354.0" />
+    <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#1f3f75" height="32.0" layoutX="500.0" layoutY="153.0" stroke="#1f3f75" strokeType="INSIDE" styleClass="shadow" width="118.0" />
+    <Rectangle arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="40.0" layoutX="490.0" layoutY="209.0" stroke="#1f3f75" strokeType="INSIDE" width="354.0" />
+    <Rectangle arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="40.0" layoutX="490.0" layoutY="265.0" stroke="#1f3f75" strokeType="INSIDE" width="354.0" />
+    <Rectangle arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="40.0" layoutX="490.0" layoutY="323.0" stroke="#1f3f75" strokeType="INSIDE" width="354.0" />
+    <Rectangle arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="40.0" layoutX="490.0" layoutY="383.0" stroke="#1f3f75" strokeType="INSIDE" width="354.0" />
+    <Rectangle arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="40.0" layoutX="494.0" layoutY="440.0" stroke="#1f3f75" strokeType="INSIDE" width="354.0" />
+    <Button fx:id="buttonDossierMedicalCoachD" layoutX="493.0" layoutY="503.0" mnemonicParsing="false" onAction="#switchToDossier2" prefHeight="40.0" prefWidth="354.0" styleClass="certbtn" stylesheets="@Styles.css" text="Dossier Médical" textFill="#f4bf4f">
+        <font>
+            <Font name="System Bold" size="14.0" />
+        </font>
+    </Button>
+    <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#1f3f75" height="32.0" layoutX="500.0" layoutY="213.0" stroke="#1f3f75" strokeType="INSIDE" styleClass="shadow" width="87.0" />
+    <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#1f3f75" height="32.0" layoutX="501.0" layoutY="269.0" stroke="#1f3f75" strokeType="INSIDE" styleClass="shadow" width="52.0" />
+    <Rectangle arcHeight="10.0" arcWidth="10.0" fill="#1f3f75" height="32.0" layoutX="498.0" layoutY="327.0" stroke="#1f3f75" strokeType="INSIDE" styleClass="shadow" width="58.0" />
+    <Rectangle arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="32.0" layoutX="498.0" layoutY="387.0" stroke="WHITE" strokeType="INSIDE" styleClass="shadow" width="33.0" />
+    <Rectangle arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="32.0" layoutX="502.0" layoutY="444.0" stroke="WHITE" strokeType="INSIDE" styleClass="shadow" width="33.0" />
+    <Text fill="WHITE" layoutX="508.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date de naissance">
+        <font>
+            <Font name="System Bold Italic" size="12.0" />
+        </font>
+    </Text>
+    <Text fill="WHITE" layoutX="505.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date d'entrée">
+        <font>
+            <Font name="System Bold Italic" size="12.0" />
+        </font>
+    </Text>
+    <Text fill="WHITE" layoutX="511.0" layoutY="288.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Genre">
+        <font>
+            <Font name="System Bold Italic" size="12.0" />
+        </font>
+    </Text>
+    <Text fill="WHITE" layoutX="505.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adresse">
+        <font>
+            <Font name="System Bold Italic" size="12.0" />
+        </font>
+    </Text>
+    <Text fx:id="dateNaissanceAdherentD" fill="#1f3f75" layoutX="654.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date de naissance">
+        <font>
+            <Font name="System Bold Italic" size="12.0" />
+        </font>
+    </Text>
+    <Text fx:id="dateEntreeAdherentD" fill="#1f3f75" layoutX="616.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date d'entrée">
+        <font>
+            <Font name="System Bold Italic" size="12.0" />
+        </font>
+    </Text>
+    <Text fx:id="genreAdherentD" fill="#1f3f75" layoutX="581.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Genre">
+        <font>
+            <Font name="System Bold Italic" size="12.0" />
+        </font>
+    </Text>
+    <Text fx:id="adresseAdherentD" fill="#1f3f75" layoutX="582.0" layoutY="347.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adresse">
+        <font>
+            <Font name="System Bold Italic" size="12.0" />
+        </font>
+    </Text>
+    <Text fx:id="phoneAdherentD" fill="#1f3f75" layoutX="555.0" layoutY="407.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Numéro du téléphone">
+        <font>
+            <Font name="System Bold Italic" size="12.0" />
+        </font>
+    </Text>
+    <Text fx:id="emailAdherentD" fill="#1f3f75" layoutX="553.0" layoutY="465.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+        <font>
+            <Font name="System Bold Italic" size="12.0" />
+        </font>
+    </Text>
+    <ImageView fitHeight="16.0" fitWidth="16.0" layoutX="511.0" layoutY="452.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@pics/arroba.png" />
+        </image>
+    </ImageView>
+    <ImageView fitHeight="16.0" fitWidth="20.0" layoutX="507.0" layoutY="395.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@pics/phone-call.png" />
+        </image>
+    </ImageView>
+    <Text fill="#1f3f75" layoutX="210.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Coach">
+        <font>
+            <Font name="System Bold Italic" size="38.0" />
+        </font>
+    </Text>
+   <ImageView fx:id="qrphoto" fitHeight="89.0" fitWidth="100.0" layoutX="220.0" layoutY="479.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+         <Image url="@pics/QR.png" />
+      </image>
+   </ImageView>
+
+</AnchorPane>

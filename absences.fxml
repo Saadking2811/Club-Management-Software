@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="760.0" prefWidth="1024.0" style="-fx-background-color: #1f3f75;" stylesheets="@Styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.club.Controller.AbsenceController">
+    <children>
+        <StackPane layoutX="46.0" layoutY="36.0" onMouseClicked="#switchToScene5">
+            <!-- Marges pour étendre la zone de clic -->
+            <padding>
+                <Insets bottom="10" left="10" right="10" top="10" />
+            </padding>
+
+            <!-- ImageView -->
+            <ImageView>
+                <image>
+                    <Image url="@pics/left-arrow.png" />
+                </image>
+            </ImageView>
+        </StackPane>
+        <VBox alignment="TOP_CENTER" layoutX="263.0" layoutY="108.0" prefHeight="559.0" prefWidth="498.0" spacing="20.0">
+            <Label text="Voir les Absences" textFill="WHITE">
+                <font>
+                    <Font name="System Bold" size="35.0" />
+                </font>
+            </Label>
+            <HBox alignment="CENTER" spacing="10.0">
+                <Label prefHeight="24.0" prefWidth="60.0" text="Groupe:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font></Label>
+            <ComboBox fx:id="cmbGroupeA" prefWidth="150.0" style="-fx-background-color: white;" styleClass="absences-combobox-groupes-style" />
+            </HBox>
+            <HBox alignment="CENTER" spacing="10.0">
+                <Label prefHeight="22.0" prefWidth="65.0" text="Séance:" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font></Label>
+            <ComboBox fx:id="cmbSeanceA" prefWidth="150.0" style="-fx-background-color: white;" styleClass="absences-combobox-seances-style" />
+            </HBox>
+
+            <!-- ListView pour afficher la liste des adhérents -->
+            <ListView fx:id="absentListView" prefHeight="297.0" prefWidth="471.0" styleClass="absences-listview-style">
+                <cellFactory>
+
+                </cellFactory>
+            </ListView>
+        </VBox>
+      <ImageView fitHeight="252.0" fitWidth="286.0" layoutX="761.0" layoutY="504.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pics/33.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

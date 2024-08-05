@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="765.0" prefWidth="1024.0" style="-fx-background-color: #1f3f75;" stylesheets="@Styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.club.Controller.ConnexionController">
+
+
+    <StackPane layoutX="46.0" layoutY="36.0" onMouseClicked="#switchToDossier1">
+        <!-- Marges pour étendre la zone de clic -->
+        <padding>
+            <Insets bottom="10" left="10" right="10" top="10" />
+        </padding>
+
+        <!-- ImageView -->
+        <ImageView>
+            <image>
+                <Image url="@pics/left-arrow.png" />
+            </image>
+        </ImageView>
+    </StackPane>
+    <Rectangle arcHeight="25.0" arcWidth="25.0" fill="WHITE" height="546.0" layoutX="134.0" layoutY="97.0" stroke="WHITE" strokeType="INSIDE" styleClass="shadow" width="760.0" />
+    <Text fill="#1f3f75" layoutX="334.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Certeficat d'habilité">
+        <font>
+            <Font name="System Bold Italic" size="38.0" />
+        </font>
+    </Text>
+    <ImageView fitHeight="55.0" fitWidth="58.0" layoutX="791.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@pics/dossier-medical.png" />
+        </image>
+    </ImageView>
+   <ImageView fitHeight="361.0" fitWidth="454.0" layoutX="298.0" layoutY="223.0" pickOnBounds="true" preserveRatio="true" />
+
+
+
+
+
+</AnchorPane>

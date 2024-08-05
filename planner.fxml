@@ -1,0 +1,950 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="1196.0" prefWidth="1017.0" stylesheets="@Styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.club.Controller.ConnexionController">
+<Rectangle arcHeight="25.0" arcWidth="25.0" fill="WHITE" height="78.0" layoutX="58.0" layoutY="5.0" stroke="WHITE" strokeType="INSIDE" styleClass="shadow" width="126.0" />
+<GridPane fx:id="test" />
+    <!-- Fond du planning -->
+    <Rectangle arcHeight="25.0" arcWidth="25.0" fill="#1f3f75" height="627.0" layoutX="1.0" layoutY="112.0" width="988.0" />
+
+    <!-- Conteneur pour les contrôles de navigation -->
+    <HBox alignment="TOP_CENTER" layoutX="343.0" layoutY="40.0" spacing="20" />
+
+    <!-- Création d'un TabPane pour basculer entre les deux plannings -->
+    <TabPane layoutX="24.0" layoutY="112.0" prefHeight="557.0" prefWidth="942.0">
+      <Tab onSelectionChanged="#changeToGroupes" text="Groupes">
+         <content>
+            <VBox layoutX="10" layoutY="109.0" prefHeight="570.0" prefWidth="1000.0">
+               <children>
+                  <ScrollPane maxWidth="1.7976931348623157E308" prefHeight="1200.0" prefWidth="1000.0">
+                     <content>
+                        <GridPane fx:id="gridgroupe" gridLinesVisible="true" prefHeight="1200.0" prefWidth="938.0" styleClass="stack-pane-special">
+                           <columnConstraints>
+                              <ColumnConstraints />
+                              <ColumnConstraints />
+                              <ColumnConstraints />
+                              <ColumnConstraints />
+                              <ColumnConstraints />
+                              <ColumnConstraints />
+                              <ColumnConstraints />
+                              <ColumnConstraints />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                              <RowConstraints maxHeight="29.59998779296876" minHeight="10.0" prefHeight="24.00001220703126" />
+                              <RowConstraints maxHeight="27.999993896484398" minHeight="10.0" prefHeight="23.99998779296874" />
+                              <RowConstraints maxHeight="32.0" minHeight="8.800018310546875" prefHeight="20.800048828125" />
+                              <RowConstraints maxHeight="27.19996337890626" minHeight="18.399993896484375" prefHeight="20.00004882812499" />
+                              <RowConstraints maxHeight="25.599951171874977" minHeight="9.79998779296875" prefHeight="23.199975585937523" />
+                              <RowConstraints maxHeight="23.200048828124977" minHeight="10.0" prefHeight="20.800024414062477" />
+                              <RowConstraints maxHeight="24.800024414062477" minHeight="10.0" prefHeight="23.200048828124977" />
+                              <RowConstraints maxHeight="35.19998779296873" minHeight="10.0" prefHeight="35.19998779296873" />
+                              <RowConstraints maxHeight="25.600012207031227" minHeight="10.0" prefHeight="25.600012207031227" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                              <RowConstraints />
+                              <RowConstraints />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                              <RowConstraints />
+                           </rowConstraints>
+                           <children>
+                              <StackPane prefHeight="15.3" prefWidth="150.0" style="-fx-background-color: #F4BF4F;" GridPane.columnIndex="1">
+                                 <children>
+                                    <Text fill="#1f3f75" text="Dimanche">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: #F4BF4F;" GridPane.columnIndex="2">
+                                 <children>
+                                    <Text fill="#1f3f75" text="Lundi">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: #F4BF4F;" GridPane.columnIndex="3">
+                                 <children>
+                                    <Text fill="#1f3f75" text="Mardi">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: #F4BF4F;" GridPane.columnIndex="4">
+                                 <children>
+                                    <Text fill="#1f3f75" text="Mercredi">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: #F4BF4F;" GridPane.columnIndex="5">
+                                 <children>
+                                    <Text fill="#1f3f75" text="Jeudi">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: #F4BF4F;" GridPane.columnIndex="6">
+                                 <children>
+                                    <Text fill="#1f3f75" text="Vendredi">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: #F4BF4F;" GridPane.columnIndex="7">
+                                 <children>
+                                    <Text fill="#1f3f75" text="Samedi">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="1">
+                                 <children>
+                                    <Text fill="WHITE" text="06:00 -&gt; 06:30">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="2">
+                                 <children>
+                                    <Text fill="WHITE" text="06:30 -&gt; 07:00">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="3">
+                                 <children>
+                                    <Text fill="WHITE" text="07:00-&gt; 07:30">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="4">
+                                 <children>
+                                    <Text fill="WHITE" text="07:30 -&gt; 08:00">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="5">
+                                 <children>
+                                    <Text fill="WHITE" text="08:00 -&gt; 08:30">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="6">
+                                 <children>
+                                    <Text fill="WHITE" text="08:30 -&gt; 09:00">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="7">
+                                 <children>
+                                    <Text fill="WHITE" text="09:00 -&gt; 09:30">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="8">
+                                 <children>
+                                    <Text fill="WHITE" text="09:30 -&gt;10:00">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="18.0" prefWidth="86.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="9">
+                                 <children>
+                                    <Text fill="WHITE" text="10:00 -&gt; 10:30">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="42.0" prefWidth="86.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="10">
+                                 <children>
+                                    <Text fill="WHITE" text="10:30 -&gt; 11:00">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </StackPane>
+                              <StackPane minHeight="-Infinity" prefHeight="17.0" prefWidth="122.0" style="-fx-background-color: #00638d;" styleClass="stack-pane-special" GridPane.rowIndex="11">
+                                 <children>
+                                    <Text fill="WHITE" text="11:00 -&gt; 11:30" wrappingWidth="81.755859375">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </StackPane>
+                              <StackPane maxWidth="-Infinity" minHeight="-Infinity" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" styleClass="stack-pane-special" GridPane.rowIndex="12">
+                                 <children>
+                                    <Text fill="WHITE" text="11:30 -&gt;12:00" wrappingWidth="78.45703125">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </StackPane>
+                              <StackPane minHeight="-Infinity" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" styleClass="stack-pane-special" GridPane.rowIndex="13">
+                                 <children>
+                                    <Text fill="WHITE" text="12:00 -&gt;12:30">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </StackPane>
+                              <StackPane minHeight="-Infinity" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" styleClass="stack-pane-special" GridPane.rowIndex="14">
+                                 <children>
+                                    <Text fill="WHITE" text="12:30 -&gt; 13:00">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </StackPane>
+                              <StackPane minHeight="-Infinity" prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" styleClass="stack-pane-special" GridPane.rowIndex="15">
+                                 <children>
+                                    <Text fill="WHITE" text="13:00 -&gt; 13:30" wrappingWidth="81.755859375">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </StackPane>
+                              <StackPane minHeight="-Infinity" prefHeight="25.0" prefWidth="86.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="16">
+                                 <children>
+                                    <Text fill="WHITE" text="13:30 -&gt; 14:00 ">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="17">
+                                 <children>
+                                    <Text fill="WHITE" text="14:00 -&gt; 14:30">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="18">
+                                 <children>
+                                    <Text fill="WHITE" text="14:30 -&gt; 15:00">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="19">
+                                 <children>
+                                    <Text fill="WHITE" text="15:00 -&gt; 15:30">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="20">
+                                 <children>
+                                    <Text fill="WHITE" text="15:30 -&gt; 16:00">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="21">
+                                 <children>
+                                    <Text fill="WHITE" text="16:00 -&gt; 16:30">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="22">
+                                 <children>
+                                    <Text fill="WHITE" text="16:30 -&gt; 17:00">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="23">
+                                 <children>
+                                    <Text fill="WHITE" text="17:00 -&gt;17:30">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="24">
+                                 <children>
+                                    <Text fill="WHITE" text="17:30 -&gt;18:00">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="30.0" prefWidth="67.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="25">
+                                 <children>
+                                    <Text fill="WHITE" text="18:00 -&gt;18:30">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="26">
+                                 <children>
+                                    <Text fill="WHITE" text="18:30 -&lt; 19:00">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="27">
+                                 <children>
+                                    <Text fill="WHITE" text="19:00 -&lt; 19:30">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="28">
+                                 <children>
+                                    <Text fill="WHITE" text="19:30 -&lt; 20:00">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="29">
+                                 <children>
+                                    <Text fill="WHITE" text="20:00 -&lt; 20:30">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="30">
+                                 <children>
+                                    <Text fill="WHITE" text="20:30 -&lt; 21:00">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="31">
+                                 <children>
+                                    <Text fill="WHITE" text="21:00 -&lt; 21:30">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="32">
+                                 <children>
+                                    <Text fill="WHITE" text="21:30 -&lt; 22:00">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="33">
+                                 <children>
+                                    <Text fill="WHITE" text="22:00 -&lt; 22:30">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="34">
+                                 <children>
+                                    <Text fill="WHITE" text="22:30 -&lt; 23:00">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="35">
+                                 <children>
+                                    <Text fill="WHITE" text="23:00 -&lt; 23:30">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="36">
+                                 <children>
+                                    <Text fill="WHITE" text="23:30 -&lt; 00:00">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="37">
+                                 <children>
+                                    <Text fill="WHITE" text="00:00 -&lt; 00:30">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </StackPane>
+                              <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="38">
+                                 <children>
+                                    <Text fill="WHITE" text="00:30 -&lt; 01:00">
+                                       <font>
+                                          <Font name="System Bold Italic" size="12.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </StackPane>
+                           </children>
+                        </GridPane>
+                     </content>
+                  </ScrollPane>
+               </children>
+            </VBox>
+         </content>
+      </Tab>
+
+
+  
+        <Tab onSelectionChanged="#changeToCoaches" text="Coaches">
+            <content>
+                <!-- Conteneur pour l'affichage de la semaine -->
+                <VBox layoutX="10" layoutY="109.0" prefHeight="570.0" prefWidth="1000.0">
+                    <ScrollPane maxWidth="1.7976931348623157E308" prefHeight="1200.0" prefWidth="1000.0">
+                        <content>
+                            <GridPane gridLinesVisible="true" prefHeight="1200.0" prefWidth="938.0">
+                                <!-- Jours de la semaine -->
+                                <StackPane prefHeight="15.3" prefWidth="150.0" style="-fx-background-color: #F4BF4F;" GridPane.columnIndex="1">
+                                    <Text fill="#1f3f75" text="Dimanche">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font>
+                           </Text>
+                                </StackPane>
+                                <StackPane prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: #F4BF4F;" GridPane.columnIndex="2">
+                                    <Text fill="#1f3f75" text="Lundi">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font>
+                           </Text>
+                                </StackPane>
+                                <StackPane prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: #F4BF4F;" GridPane.columnIndex="3">
+                                    <Text fill="#1f3f75" text="Mardi">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font>
+                           </Text>
+                                </StackPane>
+                                <StackPane prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: #F4BF4F;" GridPane.columnIndex="4">
+                                    <Text fill="#1f3f75" text="Mercredi">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font>
+                           </Text>
+                                </StackPane>
+                                <StackPane prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: #F4BF4F;" GridPane.columnIndex="5">
+                                    <Text fill="#1f3f75" text="Jeudi">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font>
+                           </Text>
+                                </StackPane>
+                                <StackPane prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: #F4BF4F;" GridPane.columnIndex="6">
+                                    <Text fill="#1f3f75" text="Vendredi">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font>
+                           </Text>
+                                </StackPane>
+                                <StackPane prefHeight="60.0" prefWidth="150.0" style="-fx-background-color: #F4BF4F;" GridPane.columnIndex="7">
+                                    <Text fill="#1f3f75" text="Samedi">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font>
+                           </Text>
+                                </StackPane>
+                  
+                  
+                                <!-- Les champs -->
+                                <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="1">
+                                    <Text fill="WHITE" text="06:00 -&gt; 06:30">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font>
+                           </Text>
+                                </StackPane>
+                                <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="2">
+                                    <Text fill="WHITE" text="06:30 -&gt; 07:00">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font>
+                           </Text>
+                                </StackPane>
+                                <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="3">
+                                    <Text fill="WHITE" text="07:00-&gt; 07:30">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font>
+                           </Text>
+                                </StackPane>
+                                <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="4">
+                                    <Text fill="WHITE" text="07:30 -&gt; 08:00">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font>
+                           </Text>
+                                </StackPane>
+                                <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="5">
+                                    <Text fill="WHITE" text="08:00 -&gt; 08:30">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font>
+                           </Text>
+                                </StackPane>
+                                <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="6">
+                                    <Text fill="WHITE" text="08:30 -&gt; 09:00">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font>
+                           </Text>
+                                </StackPane>
+                                <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="7">
+                                    <Text fill="WHITE" text="09:00 -&gt; 09:30">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font>
+                           </Text>
+                                </StackPane>
+                                <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="8">
+                                    <Text fill="WHITE" text="09:30 -&gt;10:00">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font>
+                           </Text>
+                                </StackPane>
+                                <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="9">
+                                    <Text fill="WHITE" text="10:00 -&gt; 10:30">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font>
+                           </Text>
+                                </StackPane> <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="10">
+                                    <Text fill="WHITE" text="10:30 -&gt; 11:00">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font>
+                           </Text>
+                                </StackPane>
+                                <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="11">
+                                    <Text fill="WHITE" text="11:00 -&gt; 11:30">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font>
+                           </Text>
+                                </StackPane>
+                                <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="12">
+                                    <Text fill="WHITE" text="11:30 -&gt;12:00" wrappingWidth="78.45703125">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font>
+                           </Text>
+                                </StackPane>
+                                <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="13">
+                                    <Text fill="WHITE" text="12:00 -&gt;12:30">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font>
+                           </Text>
+                                </StackPane>
+                                <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="14">
+                                    <Text fill="WHITE" text="12:30 -&gt; 13:00">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font>
+                           </Text>
+                                </StackPane>
+                                <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="15">
+                                    <Text fill="WHITE" text="13:00 -&gt; 13:30">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font>
+                           </Text>
+                                </StackPane>
+                                <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="16">
+                                    <Text fill="WHITE" text="13:30 -&gt; 14:00 ">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font>
+                           </Text>
+                                </StackPane>
+                                <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="17">
+                                    <Text fill="WHITE" text="14:00 -&gt; 14:30">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font>
+                           </Text>
+                                </StackPane>
+                                <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="18">
+                                    <Text fill="WHITE" text="14:30 -&gt; 15:00">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font>
+                           </Text>
+                                </StackPane>
+                                <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="19">
+                                    <Text fill="WHITE" text="15:00 -&gt; 15:30">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font>
+                           </Text>
+                                </StackPane>
+                                <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="20">
+                                    <Text fill="WHITE" text="15:30 -&gt; 16:00">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font>
+                           </Text>
+                                </StackPane>
+                                <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="21">
+                                    <Text fill="WHITE" text="16:00 -&gt; 16:30">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font>
+                           </Text>
+                                </StackPane>
+                                <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="22">
+                                    <Text fill="WHITE" text="16:30 -&gt; 17:00">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font>
+                           </Text>
+                                </StackPane>
+                                <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="23">
+                                    <Text fill="WHITE" text="17:00 -&gt;17:30">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font>
+                           </Text>
+                                </StackPane>
+                                <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="24">
+                                    <Text fill="WHITE" text="17:30 -&gt;18:00">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font>
+                           </Text>
+                                </StackPane>
+                                <StackPane prefHeight="30.0" prefWidth="67.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="25">
+                                    <Text fill="WHITE" text="18:00 -&gt;18:30">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font>
+                           </Text>
+                                </StackPane>
+                                <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="26">
+                                    <Text fill="WHITE" text="18:30 -&lt; 19:00">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font>
+                           </Text>
+                                </StackPane>
+                                <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="27">
+                                    <Text fill="WHITE" text="19:00 -&lt; 19:30">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font>
+                           </Text>
+                                </StackPane>
+                                <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="28">
+                                    <Text fill="WHITE" text="19:30 -&lt; 20:00">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font>
+                           </Text>
+                                </StackPane>
+                                <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="29">
+                                    <Text fill="WHITE" text="20:00 -&lt; 20:30">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font>
+                           </Text>
+                                </StackPane>
+                                <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="30">
+                                    <Text fill="WHITE" text="20:30 -&lt; 21:00">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font>
+                           </Text>
+                                </StackPane>
+                                <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="31">
+                                    <Text fill="WHITE" text="21:00 -&lt; 21:30">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font>
+                           </Text>
+                                </StackPane>
+                                <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="32">
+                                    <Text fill="WHITE" text="21:30 -&lt; 22:00">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font>
+                           </Text>
+                                </StackPane>
+                                <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="33">
+                                    <Text fill="WHITE" text="22:00 -&lt; 22:30">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font>
+                           </Text>
+                                </StackPane>
+                                <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="34">
+                                    <Text fill="WHITE" text="22:30 -&lt; 23:00">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font>
+                           </Text>
+                                </StackPane>
+                                <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="35">
+                                    <Text fill="WHITE" text="23:00 -&lt; 23:30">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font>
+                           </Text>
+                                </StackPane>
+                                <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="36">
+                                    <Text fill="WHITE" text="23:30 -&lt; 00:00">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font>
+                           </Text>
+                                </StackPane>
+                                <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="37">
+                                    <Text fill="WHITE" text="00:00 -&lt; 00:30">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font>
+                           </Text>
+                                </StackPane>
+                                <StackPane prefHeight="30.0" prefWidth="100.0" style="-fx-background-color: #00638d;" GridPane.rowIndex="38">
+                                    <Text fill="WHITE" text="00:30 -&lt; 01:00">
+                                        <font>
+                                            <Font name="System Bold Italic" size="12.0" />
+                                        </font>
+                           </Text>
+                                </StackPane>
+                            
+                                                  <columnConstraints>
+                                    <ColumnConstraints />
+                                    <ColumnConstraints />
+                                    <ColumnConstraints />
+                                    <ColumnConstraints />
+                                    <ColumnConstraints />
+                                    <ColumnConstraints />
+                                    <ColumnConstraints />
+                                    <ColumnConstraints />
+                                </columnConstraints>
+                                <rowConstraints>
+                                    <RowConstraints />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                           <RowConstraints maxHeight="27.199987792968756" minHeight="10.0" prefHeight="27.199987792968756" />
+                           <RowConstraints maxHeight="30.40001220703124" minHeight="10.0" prefHeight="27.999987792968767" />
+                           <RowConstraints maxHeight="31.19999999999999" minHeight="10.0" prefHeight="30.40001220703124" />
+                           <RowConstraints maxHeight="40.00001220703126" minHeight="10.0" prefHeight="31.200018310546852" />
+                           <RowConstraints maxHeight="34.4000244140625" minHeight="10.0" prefHeight="26.399981689453114" />
+                           <RowConstraints maxHeight="34.39997558593751" minHeight="10.0" prefHeight="26.399987792968773" />
+                                    <RowConstraints maxHeight="37.60003662109375" minHeight="8.800018310546875" prefHeight="27.20001220703125" />
+                                    <RowConstraints maxHeight="33.60000000000002" minHeight="17.59998779296876" prefHeight="24.800012207031273" />
+                                    <RowConstraints maxHeight="28.800024414062477" minHeight="9.79998779296875" prefHeight="24.00004882812499" />
+                           <RowConstraints maxHeight="30.399999999999977" minHeight="10.0" prefHeight="25.599951171874977" />
+                           <RowConstraints maxHeight="25.599951171874977" minHeight="10.0" prefHeight="18.39997558593751" />
+                           <RowConstraints maxHeight="35.19998779296873" minHeight="10.0" prefHeight="35.19998779296873" />
+                           <RowConstraints maxHeight="25.600012207031227" minHeight="10.0" prefHeight="25.600012207031227" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                           <RowConstraints />
+                           <RowConstraints />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                           <RowConstraints minHeight="10.0" prefHeight="30.0" />
+                           <RowConstraints />
+                                </rowConstraints>
+                  
+                            </GridPane>
+                        </content>
+                    </ScrollPane>
+                </VBox>
+            </content>
+        </Tab>
+
+
+
+
+    </TabPane>
+
+
+    <Label layoutX="70.0" layoutY="54.0" style="-fx-font-weight: bold;" text="Jour" textFill="#1f3f75" />
+    <Label layoutX="72.0" layoutY="15.0" style="-fx-font-weight: bold;" text="Année: " textFill="#1f3f75" />
+    <Label layoutX="70.0" layoutY="35.0" style="-fx-font-weight: bold;" text="Mois: " textFill="#1f3f75" />
+
+    <StackPane layoutX="948.0" layoutY="11.0" onMouseClicked="#switchToScene7a" prefWidth="28.0">
+        <!-- Marges pour étendre la zone de clic -->
+        <padding>
+            <Insets bottom="10" left="10" right="10" top="10" />
+        </padding>
+
+        <!-- ImageView -->
+        <ImageView layoutX="922.0" layoutY="28.0">
+            <image>
+                <Image url="@pics/left-arrow.png" />
+            </image>
+        </ImageView>
+
+    </StackPane>
+    <Rectangle arcHeight="25.0" arcWidth="25.0" fill="#1f3f75" height="42.0" layoutX="158.0" layoutY="3.0" stroke="WHITE" strokeType="INSIDE" styleClass="shadow" width="52.0" />
+    <ImageView fitHeight="32.0" fitWidth="39.0" layoutX="168.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
+        <image>
+            <Image url="@pics/planning.png" />
+        </image>
+    </ImageView>
+   <TextField fx:id="textchoix" alignment="CENTER" layoutX="701.0" layoutY="19.0" promptText="Groupe" styleClass="DM-button" />
+   <Button fx:id="clickcoach" layoutX="748.0" layoutY="62.0" mnemonicParsing="false" onAction="#showPlannerCoach" styleClass="DM-button" text="Actualiser" textFill="WHITE" visible="false" />
+   <Button fx:id="buttton" layoutX="748.0" layoutY="69.0" mnemonicParsing="false" onAction="#afficherplanning" styleClass="DM-button" text="Actualiser" textFill="WHITE" visible="true" />
+   <TextField fx:id="tempsd1" layoutX="224.0" layoutY="10.0" prefHeight="26.0" prefWidth="117.0" promptText="Temps Debut 1 HH:MM" styleClass="DM-button">
+      <font>
+         <Font size="10.0" />
+      </font></TextField>
+   <TextField fx:id="tempsf1" layoutX="223.0" layoutY="49.0" prefHeight="26.0" prefWidth="118.0" promptText="Temps Fin1 HH:MM" styleClass="DM-button">
+      <font>
+         <Font size="10.0" />
+      </font></TextField>
+   <TextField fx:id="tempsd2" layoutX="470.0" layoutY="10.0" prefHeight="26.0" prefWidth="118.0" promptText="Temps Debut 2 HH:MM" styleClass="DM-button">
+      <font>
+         <Font size="10.0" />
+      </font></TextField>
+   <TextField fx:id="tempsf2" layoutX="466.0" layoutY="49.0" prefHeight="26.0" prefWidth="126.0" promptText="Temps Fin 2 HH:MM" styleClass="DM-button">
+      <font>
+         <Font size="10.0" />
+      </font></TextField>
+   <Button layoutX="356.0" layoutY="49.0" mnemonicParsing="false" onAction="#echangecreneaux" styleClass="DM-button" text="Mettre à jour" textFill="#f0ff1b" />
+   <TextField fx:id="jourchange1" alignment="CENTER" layoutX="229.0" layoutY="83.0" prefHeight="27.0" prefWidth="106.0" promptText="Jour1" styleClass="DM-button" />
+   <TextField fx:id="jourchange2" alignment="CENTER" layoutX="476.0" layoutY="83.0" prefHeight="27.0" prefWidth="106.0" promptText="Jour2" styleClass="DM-button" />
+   <TextField fx:id="Annee" blendMode="SCREEN" layoutX="119.0" layoutY="11.0" prefHeight="18.0" prefWidth="34.0" styleClass="date" stylesheets="@Styles.css" />
+   <TextField fx:id="Mois" blendMode="SCREEN" layoutX="120.0" layoutY="36.0" prefHeight="18.0" prefWidth="32.0" styleClass="date" stylesheets="@Styles.css" />
+   <TextField fx:id="Jourr" blendMode="SCREEN" layoutX="115.0" layoutY="56.0" prefHeight="18.0" prefWidth="25.0" styleClass="date" stylesheets="@Styles.css" />
+ 
+</AnchorPane>

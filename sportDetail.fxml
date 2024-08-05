@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="760.0" prefWidth="1024.0" stylesheets="@Styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.club.Controller.ConnexionController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f3f75" height="776.0" layoutX="-72.0" layoutY="-10.0" stroke="#1f3f75" strokeType="INSIDE" width="438.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="776.0" layoutX="361.0" layoutY="-5.0" stroke="WHITE" strokeType="INSIDE" width="667.0" />
+      <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#ffe494" height="54.0" layoutX="519.0" layoutY="218.0" stroke="#ffe494" strokeType="INSIDE" width="401.0" />
+      <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#ffe494" height="54.0" layoutX="523.0" layoutY="324.0" stroke="#ffe494" strokeType="INSIDE" width="401.0" />
+      <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#ffe494" height="54.0" layoutX="523.0" layoutY="427.0" stroke="#ffe494" strokeType="INSIDE" width="401.0" />
+      <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#ffe494" height="54.0" layoutX="523.0" layoutY="530.0" stroke="#ffe494" strokeType="INSIDE" width="401.0" />
+      <ImageView fitHeight="250.0" fitWidth="250.0" layoutX="57.0" layoutY="246.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pics/ellipse.png" />
+         </image>
+      </ImageView>
+      <Label id="nomActivite" layoutX="108.0" layoutY="339.0" prefHeight="58.0" prefWidth="168.0" text="  Sport " textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="40.0" />
+         </font>
+      </Label>
+      <Text fx:id="categorieAct" layoutX="657.0" layoutY="251.0" styleClass="tebe" text="      catégorie">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#1f3f75" height="39.0" layoutX="432.0" layoutY="206.0" stroke="#1f3f75" strokeType="INSIDE" width="140.0" />
+      <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#1f3f75" height="39.0" layoutX="432.0" layoutY="305.0" stroke="#1f3f75" strokeType="INSIDE" width="140.0" />
+      <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#1f3f75" height="39.0" layoutX="432.0" layoutY="407.0" stroke="#1f3f75" strokeType="INSIDE" width="140.0" />
+      <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#1f3f75" height="39.0" layoutX="431.0" layoutY="511.0" stroke="#1f3f75" strokeType="INSIDE" width="140.0" />
+      <Text fill="WHITE" layoutX="463.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Catégorie">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="479.0" layoutY="331.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Sport">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="455.0" layoutY="433.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nb groupes">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="468.0" layoutY="537.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Coaches">
+         <font>
+            <Font name="System Bold Italic" size="17.0" />
+         </font>
+      </Text>
+      <Text fx:id="sportidAct" layoutX="689.0" layoutY="356.0" styleClass="tete" text="sportid">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="nbGroupsAct" layoutX="675.0" layoutY="459.0" styleClass="tete" text="nb groupes">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="coachesAct" layoutX="623.0" layoutY="562.0" strokeType="OUTSIDE" strokeWidth="0.0" text="coaches">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+
+
+   <StackPane layoutX="46.0" layoutY="36.0" onMouseClicked="#switchToVoirSports">
+      <!-- Marges pour étendre la zone de clic -->
+      <padding>
+         <Insets bottom="10" left="10" right="10" top="10" />
+      </padding>
+
+      <!-- ImageView -->
+      <ImageView>
+         <image>
+            <Image url="@pics/left-arrow.png" />
+         </image>
+      </ImageView>
+   </StackPane>
+
+   </children>
+</AnchorPane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="cardPane7" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="268.0" prefWidth="395.0" style="-fx-background-color: white; -fx-background-radius: 25;" stylesheets="@Styles.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.club.Controller.CarteEvenementController">
+   <styleClass>
+      <String fx:value="card" />
+      <String fx:value="shadow" />
+   </styleClass>
+   <children>
+      <ImageView fx:id="photo" fitHeight="366.0" fitWidth="397.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pics/sprtEvent.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="sport" layoutX="14.0" layoutY="14.0" text="Sport" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="date" layoutX="25.0" layoutY="160.0" text="15/05/2024" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <Label fx:id="event" layoutX="28.0" layoutY="110.0" text="Evenement" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

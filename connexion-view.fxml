@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="760.0" prefWidth="1024.0" styleClass="anchor-pane-with-color" stylesheets="@Styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.club.Controller.ConnexionController">
+
+
+
+    <AnchorPane layoutX="69.0" layoutY="566.0" />
+   <AnchorPane layoutX="249.0" layoutY="86.0" prefHeight="587.0" prefWidth="526.0" style="-fx-background-color: #fff; -fx-background-radius: 25;" styleClass="shadow">
+      <children>
+         <Label layoutX="149.0" layoutY="66.0" text="CONNEXION" textFill="#1f3f75">
+            <font>
+               <Font name="Tahoma Bold" size="36.0" />
+            </font>
+         </Label>
+         <AnchorPane layoutX="182.0" layoutY="119.0" prefHeight="7.0" prefWidth="162.0" style="-fx-background-color: #1f3f75;" />
+      
+          <!-- Username TextField -->
+          <TextField fx:id="user" layoutX="126.0" layoutY="190.0" promptText="Nom d'utilisateur" styleClass="text-field1" />
+      
+          <!-- Password TextField -->
+          <PasswordField fx:id="pass" layoutX="126.0" layoutY="315.0" promptText="Mot de passe" styleClass="text-field1" />
+         <Label layoutX="350.0" layoutY="393.0" text="mot de passe oublié" textFill="#1f3f75">
+            <font>
+               <Font name="Tahoma" size="14.0" />
+            </font>
+         </Label>
+         <Button onMouseClicked="#verify" layoutX="388.0" layoutY="504.0" mnemonicParsing="false" styleClass="buttonN" text="se connecter" />
+         <ImageView fitHeight="46.0" fitWidth="52.0" layoutX="62.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@pics/icons8-username-100.png" />
+            </image>
+         </ImageView>
+         <ImageView fitHeight="46.0" fitWidth="52.0" layoutX="62.0" layoutY="331.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@pics/icons8-password-100.png" />
+            </image>
+         </ImageView>
+      </children>
+   </AnchorPane>
+
+</AnchorPane>

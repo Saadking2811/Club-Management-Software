@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER_LEFT"  prefHeight="72.0" prefWidth="975.0" spacing="15.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.club.Controller.CaseCoachController">
+    <children>
+        <ImageView fx:id="photo" fitHeight="40.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@pics/basket-ball.png" />
+            </image>
+        </ImageView>
+        <Label fx:id="fullname" prefHeight="20.0" prefWidth="176.0" text="******  *****">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="phone" layoutX="50.0" layoutY="27.0" prefHeight="20.0" prefWidth="156.0" text="0000000000">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="em" layoutX="240.0" layoutY="27.0" prefHeight="20.0" prefWidth="147.0" text="mm_*********.dz">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="datenn" layoutX="411.0" layoutY="27.0" prefHeight="18.0" prefWidth="139.0" text="jj/mm/aa">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="dateee" layoutX="559.0" layoutY="27.0" prefHeight="20.0" prefWidth="123.0" text="jj/mm/aa">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Button fx:id="add" mnemonicParsing="false" prefHeight="26.0" onAction="#switchToDetailCoach"  prefWidth="34.0" style="-fx-background-radius: 50; -fx-background-color: #238591;" text="+" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+        <Button fx:id="delete" layoutX="932.0" layoutY="33.0" onAction="#Supprimercard" mnemonicParsing="false" prefHeight="26.0" prefWidth="34.0" style="-fx-background-radius: 50; -fx-background-color: #ed695e;" text="-" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Button>
+    </children>
+</HBox>

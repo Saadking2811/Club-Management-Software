@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="cardPane1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMousePressed="#click" prefHeight="154.0" prefWidth="284.0" stylesheets="@Styles.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.club.Controller.CarteAdherentController">
+   <children>
+      
+
+      <ImageView fx:id="pic" fitHeight="72.0" fitWidth="62.0" layoutX="111.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pics/userImage.png" />
+         </image>
+      </ImageView>
+
+      <ImageView fitHeight="150.0" fitWidth="280.0" layoutX="2.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@pics/card.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="namee" layoutX="15.0" layoutY="50.0" prefHeight="20.0" prefWidth="97.0" text="NOM">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameid" layoutX="185.0" layoutY="50.0" prefHeight="20.0" prefWidth="98.0" text="ID">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="typee" layoutX="97.0" layoutY="104.0" prefHeight="26.0" prefWidth="89.0" text="ADHERENT" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+   </children>
+   <styleClass>
+      <String fx:value="card" />
+      <String fx:value="shadow" />
+   </styleClass>
+</AnchorPane>

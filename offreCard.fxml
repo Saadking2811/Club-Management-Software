@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="cardPane5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMousePressed="#click" prefHeight="154.0" prefWidth="284.0" styleClass="anchor-pane-with-color" stylesheets="@Styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.club.Controller.CarteOffreController">
+    <children>
+        <ImageView fx:id="picOffre" fitHeight="63.0" fitWidth="68.0" layoutX="111.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@pics/premium.png" />
+            </image>
+        </ImageView>
+        <Label fx:id="OffreActPrem" layoutX="40.0" layoutY="113.0" prefHeight="20.0" prefWidth="109.0" text="activité" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="OffrePrixPrem" layoutX="160.0" layoutY="113.0" prefHeight="20.0" prefWidth="109.0" text="       prix" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Text fx:id="type" fill="#e2aa09" layoutX="109.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PREMIUM">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Text>
+    </children>
+</AnchorPane>

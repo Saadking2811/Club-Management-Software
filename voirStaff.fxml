@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="760.0" prefWidth="1024.0" stylesheets="@Styles.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.club.Controller.VoirStaffsController">
+    <children>
+        <HBox layoutX="383.0" layoutY="61.0" prefHeight="58.0" prefWidth="326.0" stylesheets="@Styles.css">
+            <styleClass>
+                <String fx:value="search-box" />
+                <String fx:value="shadow" />
+            </styleClass></HBox>
+        <Button fx:id="searchButtonCoach" layoutX="593.0" layoutY="75.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" styleClass="search-button" stylesheets="@Styles.css" text="rechercher" textFill="WHITE" />
+        <TextField fx:id="searchIdCoach" layoutX="383.0" layoutY="70.0" prefHeight="40.0" prefWidth="210.0" promptText="Tapez ici pour rechercher" styleClass="transparent" stylesheets="@Styles.css">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </TextField>
+        <Text fill="#00638d" layoutX="119.0" layoutY="104.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Staffs">
+            <font>
+                <Font name="System Bold Italic" size="45.0" />
+            </font>
+        </Text>
+        <HBox layoutX="87.0" layoutY="373.0" prefHeight="40.0" prefWidth="200.0" />
+        <HBox layoutX="80.0" layoutY="514.0" prefHeight="40.0" prefWidth="200.0">
+            <children>
+                <HBox prefHeight="40.0" prefWidth="18.0" />
+                <HBox prefHeight="40.0" prefWidth="90.0">
+                    <children>
+                        <HBox prefHeight="14.0" prefWidth="90.0" />
+                    </children>
+                </HBox>
+            </children>
+        </HBox>
+        <StackPane layoutX="46.0" layoutY="36.0" onMouseClicked="#switchToGPS">
+            <!-- Marges pour étendre la zone de clic -->
+            <padding>
+                <Insets bottom="10" left="10" right="10" top="10" />
+            </padding>
+
+            <!-- ImageView -->
+            <ImageView>
+                <image>
+                    <Image url="@pics/left-arrow.png" />
+                </image>
+            </ImageView>
+        </StackPane>
+
+        <HBox fx:id="H2" alignment="CENTER_LEFT" layoutX="11.0" layoutY="178.0" prefHeight="60.0" prefWidth="1000.0" spacing="15.0" style="-fx-background-color: #8fbbcc;">
+            <children>
+                <Label prefHeight="18.0" prefWidth="50.0" />
+                <Label layoutX="10.0" layoutY="31.0" prefHeight="20.0" prefWidth="180.0" text="Staff">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="64.0" layoutY="31.0" prefHeight="18.0" prefWidth="171.0" text="Nº téléphone">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="275.0" layoutY="31.0" prefHeight="20.0" prefWidth="125.0" text="Email">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="486.0" layoutY="31.0" prefHeight="20.0" prefWidth="134.0" text="Date de naissance">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="697.0" layoutY="31.0" prefHeight="20.0" prefWidth="103.0" text="Date d'entrée">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Label prefHeight="20.0" prefWidth="78.0" text="Genre">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Label>
+                <Label layoutX="805.0" layoutY="32.0" prefHeight="18.0" prefWidth="74.0" />
+            </children>
+        </HBox>
+
+        <ScrollPane fx:id="scroll2" layoutX="11.0" layoutY="240.0" prefHeight="554.0" prefWidth="1002.0">
+            <content>
+                        <AnchorPane fx:id="a2" />
+            </content>
+        </ScrollPane>
+
+    </children>
+
+
+</AnchorPane>

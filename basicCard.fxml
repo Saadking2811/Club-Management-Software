@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="154.0" prefWidth="284.0" styleClass="anchor-pane-with-color" stylesheets="@Styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.club.Controller.ConnexionController">
+    <children>
+        <ImageView fx:id="picSport" fitHeight="63.0" fitWidth="68.0" layoutX="111.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@pics/basic.png" />
+            </image>
+        </ImageView>
+        <Label fx:id="OffreActBasic" layoutX="40.0" layoutY="113.0" prefHeight="20.0" prefWidth="109.0" text="activité" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="OffrePrixBasic" layoutX="160.0" layoutY="113.0" prefHeight="20.0" prefWidth="109.0" text="       prix" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Label>
+        <Text fill="#e2aa09" layoutX="122.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BASIC">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Text>
+    </children>
+</AnchorPane>

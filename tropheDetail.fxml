@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="765.0" prefWidth="1024.0" stylesheets="@Styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.club.Controller.ConnexionController">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f3f75" height="776.0" layoutX="600.0" layoutY="-10.0" stroke="#FFECB3" strokeType="INSIDE" width="438.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="776.0" layoutX="-72.0" layoutY="-5.0" stroke="WHITE" strokeType="INSIDE" width="667.0" />
+        <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#ffe494" height="54.0" layoutX="150.0" layoutY="278.0" stroke="#ffe494" strokeType="INSIDE" width="401.0" />
+        <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#ffe494" height="54.0" layoutX="150.0" layoutY="358.0" stroke="#ffe494" strokeType="INSIDE" width="401.0" />
+        <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#ffe494" height="54.0" layoutX="150.0" layoutY="435.0" stroke="#ffe494" strokeType="INSIDE" width="401.0" />
+        <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#ffe494" height="54.0" layoutX="150.0" layoutY="514.0" stroke="#ffe494" strokeType="INSIDE" width="401.0" />
+
+        <ImageView fitHeight="250.0" fitWidth="250.0" layoutX="700.0" layoutY="246.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@pics/ellipse.png" />
+            </image>
+        </ImageView>
+
+        <HBox alignment="CENTER" layoutX="725.0" layoutY="340.0" prefHeight="60" prefWidth="200">
+            <Text fx:id="tropheNom" fill="WHITE" text="Trophe Name" textAlignment="CENTER">
+                <font>
+                    <Font name="System Bold Italic" size="30.0" />
+                </font>
+            </Text>
+        </HBox>
+
+
+        <Text fx:id="tcompetition" layoutX="290.0" layoutY="310.0" styleClass="tebe" text="competition">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Text>
+        <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#1f3f75" height="39.0" layoutX="80.0" layoutY="263.0" stroke="#FFECB3" strokeType="INSIDE" width="140.0" />
+        <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#1f3f75" height="39.0" layoutX="80.0" layoutY="346.0" stroke="#FFECB3" strokeType="INSIDE" width="140.0" />
+        <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#1f3f75" height="39.0" layoutX="80.0" layoutY="423.0" stroke="#FFECB3" strokeType="INSIDE" width="140.0" />
+        <Rectangle arcHeight="30.0" arcWidth="30.0" fill="#1f3f75" height="39.0" layoutX="80.0" layoutY="494.0" stroke="#FFECB3" strokeType="INSIDE" width="140.0" />
+
+        <Text fill="WHITE" layoutX="99.0" layoutY="289.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Competition">
+            <font>
+                <Font name="System Bold Italic" size="17.0" />
+            </font>
+        </Text>
+        <Text fill="WHITE" layoutX="120.0" layoutY="372.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Sport">
+            <font>
+                <Font name="System Bold Italic" size="17.0" />
+            </font>
+        </Text>
+        <Text fill="WHITE" layoutX="123.0" layoutY="449.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Coach">
+            <font>
+                <Font name="System Bold Italic" size="17.0" />
+            </font>
+        </Text>
+        <Text fill="WHITE" layoutX="115.0" layoutY="520.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gagnant">
+            <font>
+                <Font name="System Bold Italic" size="17.0" />
+            </font>
+        </Text>
+        <Text fx:id="tsportNom" layoutX="290.0" layoutY="390.0" styleClass="tete" text="sportid">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Text>
+        <Text fx:id="tcoachNom" layoutX="290.0" layoutY="467.0" styleClass="tete" text="coach">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Text>
+        <Text fx:id="tgagnantNom" layoutX="290.0" layoutY="546.0" strokeType="OUTSIDE" strokeWidth="0.0" text="gagnant">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+        </Text>
+
+
+    <StackPane layoutX="46.0" layoutY="36.0" onMouseClicked="#switchToVoirTrophes">
+        <!-- Marges pour étendre la zone de clic -->
+        <padding>
+            <Insets bottom="10" left="10" right="10" top="10" />
+        </padding>
+
+        <!-- ImageView -->
+        <ImageView>
+            <image>
+                <Image url="@pics/left-arrow.png" />
+            </image>
+        </ImageView>
+    </StackPane>
+    </children>
+</AnchorPane>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="760.0" prefWidth="1024.0" style="-fx-background-color: #1f3f75;" stylesheets="@Styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.club.Controller.AjouterMetriqueController">
+
+    <StackPane layoutX="51.0" layoutY="30.0" onMouseClicked="#switchToScene8a" prefWidth="28.0">
+        <!-- Marges pour étendre la zone de clic -->
+        <padding>
+            <Insets bottom="10" left="10" right="10" top="10" />
+        </padding>
+
+        <!-- ImageView -->
+        <ImageView layoutX="922.0" layoutY="28.0">
+            <image>
+                <Image url="@pics/left-arrow.png" />
+            </image>
+        </ImageView>
+
+    </StackPane>
+
+    <TabPane layoutX="30.0" layoutY="115.0" prefHeight="578.0" prefWidth="954.0">
+        <!-- Premier onglet -->
+        <Tab text="Par Admin">
+            <content>
+
+                <AnchorPane style="-fx-background-color: #1f3f75;" styleClass="anchor-pane-4">
+               <children>
+                  <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#f4bf4f" height="420.0" layoutX="76.0" layoutY="51.0" stroke="#f4bf4f" strokeType="INSIDE" width="805.0" />
+               
+                                  <HBox layoutX="190.0" layoutY="266.0" prefHeight="58.0" prefWidth="326.0" stylesheets="@Styles.css">
+                       <styleClass>
+                           <String fx:value="search-box" />
+                           <String fx:value="shadow" />
+                       </styleClass>
+                  </HBox>
+                   <TextField fx:id="searchIDO" layoutX="214.0" layoutY="275.0" prefHeight="40.0" prefWidth="210.0" promptText="Saisir une métrique" styleClass="transparent" stylesheets="@Styles.css">
+                       <font>
+                           <Font size="16.0" />
+                       </font>
+                   </TextField>
+                   <Button fx:id="searchButtonO" layoutX="421.0" layoutY="280.0" mnemonicParsing="false" onAction="#handleSubmitAddMetrique" prefHeight="30.0" prefWidth="79.0" styleClass="ajbtn" stylesheets="@Styles.css" text="ajouter" textFill="WHITE" />
+                  <ComboBox fx:id="cmbMetSport1" layoutX="207.0" layoutY="173.0" prefHeight="42.0" prefWidth="278.0" promptText="Choisir le sport" styleClass="certbtn" />
+                  <Text fill="WHITE" layoutX="190.0" layoutY="365.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pour ajouter une autre métrique, veuillez clicker ici:">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Text>
+                  <Button layoutX="484.0" layoutY="347.0" mnemonicParsing="false" onAction="#switchToScene3b1" style="-fx-background-color: #1f3f75;" styleClass="search-button" text="+" textFill="WHITE" />
+                  <Text fill="#1f3f75" layoutX="573.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Voir les métriques:">
+                     <font>
+                        <Font name="System Bold Italic" size="32.0" />
+                     </font>
+                  </Text>
+               
+                  
+               </children></AnchorPane>
+
+                
+            </content>
+        </Tab>
+
+        <!-- Deuxième onglet -->
+        <Tab text="Par Coach">
+            <content>
+
+                <AnchorPane style="-fx-background-color: #1f3f75;" styleClass="anchor-pane-4">
+               <children>
+                  <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#f4bf4f" height="420.0" layoutX="76.0" layoutY="51.0" stroke="#f4bf4f" strokeType="INSIDE" width="805.0" />
+                    <ComboBox fx:id="cmbMetSport2" layoutX="200.0" layoutY="137.0" prefHeight="40.0" prefWidth="278.0" promptText="Choisir le sport" styleClass="certbtn" />
+                    <Button fx:id="searchButtonOO" layoutX="236.0" layoutY="317.0" mnemonicParsing="false" onAction="#handleSubmitEmailCoach" prefHeight="38.0" prefWidth="205.0" style="-fx-background-color: #1f3f75;" styleClass="search-button" stylesheets="@Styles.css" text="Envoyer le formulaire au coach" textFill="WHITE" />
+                  <ComboBox fx:id="cmbMetCoach" layoutX="200.0" layoutY="192.0" prefHeight="41.0" prefWidth="278.0" promptText="Choisir le coach" styleClass="certbtn" />
+
+                   <HBox layoutX="201.0" layoutY="246.0" prefHeight="58.0" prefWidth="276.0" stylesheets="@Styles.css">
+                       <styleClass>
+                           <String fx:value="search-box" />
+                           <String fx:value="shadow" />
+                       </styleClass>
+                   </HBox>
+                   <TextField fx:id="searchIDOO" layoutX="223.0" layoutY="255.0" prefHeight="40.0" prefWidth="210.0" promptText="Saisir un lien" styleClass="transparent" stylesheets="@Styles.css">
+                       <font>
+                           <Font size="16.0" />
+                       </font>
+                   </TextField>
+
+                   <Text fill="#1f3f75" layoutX="573.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Voir les métriques:">
+                       <font>
+                           <Font name="System Bold Italic" size="32.0" />
+                       </font>
+                   </Text>
+
+                   
+
+               </children></AnchorPane>
+
+               
+            </content>
+        </Tab>
+
+
+    </TabPane>
+   <Text fill="WHITE" layoutX="323.0" layoutY="99.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajouter des métriques">
+      <font>
+         <Font name="System Bold Italic" size="42.0" />
+      </font>
+   </Text>
+             
+   <ScrollPane layoutX="620.0" layoutY="300.0" prefHeight="254.0" prefWidth="257.0" styleClass="transparent3">
+    <content>
+        <VBox fx:id="MetriquesBox" styleClass="transparent3" />
+    </content>
+</ScrollPane>
+   <Button layoutX="690.0" layoutY="570.0" mnemonicParsing="false" onAction="#AfficherMetriqu" styleClass="ajouter3_button" text="Actualiser" />
+</AnchorPane>
